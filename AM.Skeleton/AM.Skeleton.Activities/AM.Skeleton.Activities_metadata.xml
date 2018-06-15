@@ -2,6 +2,12 @@
     <Metadata>
         <ActivityMetadata ActivityType="AM.Skeleton.Activities.ExampleActivity">
             <DisplayName>Test</DisplayName>
+            <Description>A short description of the activity</Description>
+            <Category>Examples</Category>
+            <PropertiesMetadata>
+                <PropertyMetadata PropertyName="Text" DisplayName="Text" Description="This text will be shown in the output" RequiredArgument="true" Category="Input" VariableSelectionInputTextPopup="true" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="false" Order="0" />
+                <PropertyMetadata PropertyName="Output" DisplayName="Output" Description="The result of your activity will be shown in this activity" RequiredArgument="true" Category="Output" VariableSelectionInputTextPopup="false" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="true" Order="0" />
+            </PropertiesMetadata>
         </ActivityMetadata>
     </Metadata>
 </ProjectMetadata>
