@@ -48,11 +48,18 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntwicklerSchulung.cs" />
     <Compile Include="ExampleActivity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AM.Skeleton.Helper\AM.Skeleton.Helper.csproj">
+      <Project>{9c9117b4-64d7-45fd-a967-8f6deeb894cd}</Project>
+      <Name>AM.Skeleton.Helper</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

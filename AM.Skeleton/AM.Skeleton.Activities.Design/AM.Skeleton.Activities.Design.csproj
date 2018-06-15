@@ -86,6 +86,12 @@
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AM.Skeleton.Activities\AM.Skeleton.Activities.csproj">
+      <Project>{2eb1529c-04cb-4820-bc4e-7296da688480}</Project>
+      <Name>AM.Skeleton.Activities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

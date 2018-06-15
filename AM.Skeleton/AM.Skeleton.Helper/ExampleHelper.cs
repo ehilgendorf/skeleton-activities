@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace AM.Skeleton.Helper
 {
-    class ExampleHelper : IExampleHelper
+    public class ExampleHelper : IExampleHelper
     {
         public string ReturnText(string text)
         {
-            return text;
+            return "This text will be shown: " + text;
         }
     }
 }

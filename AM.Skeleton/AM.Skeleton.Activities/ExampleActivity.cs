@@ -32,8 +32,9 @@ namespace AM.Skeleton.Activities
         {
             // Obtain the runtime value of the Text input argument
             string text = context.GetValue(this.Text);
-
-            context.SetValue(Output,"This text will be shown: " + text);
+            IExampleHelper test = new ExampleHelper();
+            string testresult = test.ReturnText(text);
+            context.SetValue(Output,"This text will be shown: " + testresult);
         }
     }
 }
