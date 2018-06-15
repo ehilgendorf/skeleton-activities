@@ -12,13 +12,15 @@ namespace AM.Skeleton.Activities
 
     public sealed class ExampleActivity : CodeActivity
     {
-        // Define an activity input argument of type string
+        // Attributes can be set either directly above the properties as shown here, or loaded though xml files.
         [Category("Input")]
         [DisplayName("Input Text*")]
         [RequiredArgument]
         [VariableSelectionInputTextPopup]
         [Description("This text will be shown in the output")]
         public InArgument<string> Text { get; set; }
+
+
         [Category("Output")]
         [DisplayName("Output*")]
         [RequiredArgument]
