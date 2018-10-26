@@ -7,8 +7,8 @@
     <ProjectGuid>{9C9117B4-64D7-45FD-A967-8F6DEEB894CD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AM.Skeleton.Helper</RootNamespace>
-    <AssemblyName>AM.Skeleton.Helper</AssemblyName>
+    <RootNamespace>AM.Skeleton.Application</RootNamespace>
+    <AssemblyName>AM.Skeleton.Application</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

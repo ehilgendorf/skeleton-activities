@@ -59,7 +59,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AM.Skeleton.Helper\AM.Skeleton.Application.csproj">
+    <ProjectReference Include="..\AM.Skeleton.Application\AM.Skeleton.Application.csproj">
       <Project>{9c9117b4-64d7-45fd-a967-8f6deeb894cd}</Project>
       <Name>AM.Skeleton.Application</Name>
     </ProjectReference>

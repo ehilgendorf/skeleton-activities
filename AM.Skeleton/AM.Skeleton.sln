@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AM.Skeleton.Activities.Desi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AM.Skeleton.Activities.Test", "AM.Skeleton.Activities.Test\AM.Skeleton.Activities.Test.csproj", "{065F8904-2301-4026-A3B4-08AD1B5B0FBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AM.Skeleton.Application", "AM.Skeleton.Helper\AM.Skeleton.Application.csproj", "{9C9117B4-64D7-45FD-A967-8F6DEEB894CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AM.Skeleton.Application", "AM.Skeleton.Application\AM.Skeleton.Application.csproj", "{9C9117B4-64D7-45FD-A967-8F6DEEB894CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
