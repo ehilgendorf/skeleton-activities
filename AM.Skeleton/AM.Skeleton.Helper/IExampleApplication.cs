@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AM.Skeleton.Helper
+namespace AM.Skeleton.Application
 {
-    public interface IExampleHelper
+    public interface IExampleApplication
     {
         string ReturnText(string text);
     }

@@ -64,9 +64,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AM.Skeleton.Helper\AM.Skeleton.Helper.csproj">
+    <ProjectReference Include="..\AM.Skeleton.Helper\AM.Skeleton.Application.csproj">
       <Project>{9c9117b4-64d7-45fd-a967-8f6deeb894cd}</Project>
-      <Name>AM.Skeleton.Helper</Name>
+      <Name>AM.Skeleton.Application</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

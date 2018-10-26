@@ -5,7 +5,7 @@ using System.Text;
 using System.Activities;
 using System.ComponentModel;
 using AM.Core.ActivityDesignBase.Attributes;
-using AM.Skeleton.Helper;
+using AM.Skeleton.Application;
 
 namespace AM.Skeleton.Activities
 {
@@ -34,7 +34,7 @@ namespace AM.Skeleton.Activities
         {
             // Obtain the runtime value of the Text input argument
             string text = context.GetValue(this.Text);
-            IExampleHelper test = new ExampleHelper();
+            IExampleApplication test = new ExampleApplication();
             string testresult = test.ReturnText(text);
             context.SetValue(Output,"This text will be shown: " + testresult);
         }
