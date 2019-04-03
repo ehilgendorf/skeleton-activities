@@ -13,6 +13,8 @@
     <AssemblyName>AM.Skeleton.Activities</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,8 +34,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AM.Common.Activities, Version=1.1.1.465, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.Common.Activities.1.1.1.465\lib\net45\AM.Common.Activities.dll</HintPath>
+    </Reference>
+    <Reference Include="AM.ComposerActivitiesBridge, Version=1.0.2.13, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.ComposerActivitiesBridge.1.0.2.13\lib\net45\AM.ComposerActivitiesBridge.dll</HintPath>
+    </Reference>
     <Reference Include="AM.Core.ActivityDesignBase, Version=1.0.25.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AM.Core.ActivityDesignBase.1.0.25\lib\net45\AM.Core.ActivityDesignBase.dll</HintPath>
+    </Reference>
+    <Reference Include="AM.Core.ActivityLogger, Version=2.0.2.19, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.Core.ActivityLogger.2.0.2.19\lib\net45\AM.Core.ActivityLogger.dll</HintPath>
+    </Reference>
+    <Reference Include="AM.Core.Protocol.Writer, Version=1.2.0.24, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.Core.Protocol.Writer.1.2.0.24\lib\net45\AM.Core.Protocol.Writer.dll</HintPath>
     </Reference>
     <Reference Include="AM.DefaultActivities, Version=1.0.22.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AM.DefaultActivities.Design.1.0.22\lib\net45\AM.DefaultActivities.dll</HintPath>
@@ -43,6 +57,12 @@
     </Reference>
     <Reference Include="AM.Logging, Version=2.1.2.27, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AM.Logging.2.1.2.27\lib\net45\AM.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoItX3.Assembly, Version=3.0.0.0, Culture=neutral, PublicKeyToken=a646454c8d475470, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoItX.Dotnet.3.3.14.5\lib\AutoItX3.Assembly.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.2.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.2\lib\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
     <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
@@ -55,6 +75,9 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
@@ -76,6 +99,13 @@
     <Content Include="AM.Skeleton.Activities_metadata.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\AutoItX.Dotnet.3.3.14.5\build\AutoItX.Dotnet.targets" Condition="Exists('..\packages\AutoItX.Dotnet.3.3.14.5\build\AutoItX.Dotnet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\AutoItX.Dotnet.3.3.14.5\build\AutoItX.Dotnet.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\AutoItX.Dotnet.3.3.14.5\build\AutoItX.Dotnet.targets'))" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
