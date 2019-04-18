@@ -14,7 +14,7 @@ namespace AM.Skeleton.Activities.Design.CustomEditor
         public override void ShowDialog(PropertyValue propertyValue,
             IInputElement commandSource)
         {
-            // Instead of a Open File dialog you can start a Custom Window
+            // Instead of an Open File dialog you can start a Custom Window
             OpenFileDialog browse = new OpenFileDialog();
 
             if (browse.ShowDialog() == DialogResult.OK)
