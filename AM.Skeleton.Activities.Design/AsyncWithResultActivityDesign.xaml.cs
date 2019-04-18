@@ -11,13 +11,19 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using AM.Core.ActivityDesignBase;
 
 namespace AM.Skeleton.Activities.Design
 {
-    // Interaction logic for ActivityDesigner1.xaml
-    public partial class ActivityDesigner1
+    /// <summary>
+    /// The Attributes declare that this Design should be used for the Analyst or the Developer view.
+    ///
+    /// These Attributes can also be declared independently to have independent designs for each view
+    /// </summary>
+    [AnalystDesigner(typeof(AsyncWithResultActivity))]
+    public partial class AsyncWithResultActivity
     {
-        public ActivityDesigner1()
+        public AsyncWithResultActivity()
         {
             InitializeComponent();
         }

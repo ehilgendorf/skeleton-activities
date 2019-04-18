@@ -30,7 +30,7 @@ namespace AM.Skeleton.Activities.Design
         {
             string metadataFile = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) +
                                   "\\AM.Skeleton.Activities_metadata.xml";
-            Assembly activities = Assembly.GetAssembly(typeof(ExampleActivity));
+            Assembly activities = Assembly.GetAssembly(typeof(ExampleCodeActivity));
             BaseDesignerMetadata.LoadMetadata(builder, metadataFile, activities);
         }
     }

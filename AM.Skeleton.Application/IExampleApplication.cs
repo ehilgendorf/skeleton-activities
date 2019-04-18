@@ -9,5 +9,9 @@ namespace AM.Skeleton.Application
     public interface IExampleApplication
     {
         string ReturnText(string text);
+        
+        string ExampleEditor { get; set; }
+        
+        void SetOption(ExamplePropertyOptions options);
     }
 }
