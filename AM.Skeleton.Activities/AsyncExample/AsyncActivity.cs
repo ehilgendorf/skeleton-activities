@@ -7,7 +7,7 @@ using AM.Common.Activities.BaseActivities;
 namespace AM.Skeleton.Activities.AsyncExample
 {
     /// <summary>
-    /// Basic example of an long running Task 
+    /// Basic example of a long running Task 
     /// </summary>
     public class AsyncActivity : AbstractTaskAsyncCodeActivity
     {
