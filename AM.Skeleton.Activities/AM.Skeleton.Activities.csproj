@@ -127,6 +127,7 @@
     <Compile Include="AsyncExample\AsyncActivity.cs" />
     <Compile Include="AsyncExample\AsyncWithResultActivity.cs" />
     <Compile Include="DatabaseExampleActivity.cs" />
+    <Compile Include="ErrorMessageCodeActivity.cs" />
     <Compile Include="ExampleCodeActivity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScopeExample\ChildActivity.cs" />

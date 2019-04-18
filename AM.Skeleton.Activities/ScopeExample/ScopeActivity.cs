@@ -11,13 +11,13 @@ namespace AM.Skeleton.Activities.ScopeExample
     {
         public OutArgument<string> TextToPassToChildren { get; set; }
 
-        public static string ExcelContextItemName => "ScopeActivityContextObject";
+        public static string ScopeContextItemName => "ScopeActivityContextObject";
 
         public ScopeActivity()
         {
             var action = new ActivityAction<object>
             {
-                Argument = new DelegateInArgument<object>(ExcelContextItemName)
+                Argument = new DelegateInArgument<object>(ScopeContextItemName)
             };
 
             var flowchart = new Flowchart();
