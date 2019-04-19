@@ -6,7 +6,8 @@
                     xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
 
-    <DataTemplate x:Key="FileDialogEditor">
+    <!-- DataTemplate for a file path control that will be used for the custom editor example see FileBrowserDialogEditor.cs on how to apply this  -->
+    <DataTemplate x:Key="FilePathDialogEditor">
         <FrameworkTemplate.Resources>
             <converters:ArgumentToExpressionModelItemConverter x:Key="ArgumentToExpressionModelItemConverter" />
             <converters:ModelPropertyEntryToOwnerActivityConverter x:Key="ModelPropertyEntryToOwnerActivityConverter" />
