@@ -10,6 +10,7 @@ namespace AM.Skeleton.Activities.Design
     public partial class ScopeActivityAnalystDesigner : IScopeNavigationIcon
     {
         private bool _onlyOnFirstLoad;
+
         public ScopeActivityAnalystDesigner()
         {
             InitializeComponent();
@@ -20,10 +21,7 @@ namespace AM.Skeleton.Activities.Design
             base.OnGotFocus(e);
 
             if (_onlyOnFirstLoad) return;
-            if (WorkflowItemPresenter.Item?.View is ActivityDesigner flowchart)
-            {
-                flowchart.ExpandState = true;
-            }
+            if (WorkflowItemPresenter.Item?.View is ActivityDesigner flowchart) flowchart.ExpandState = true;
 
             _onlyOnFirstLoad = true;
         }

@@ -9,10 +9,10 @@ namespace AM.Skeleton.Activities.AsyncExample
     public class AsyncWithResultActivity : AbstractTaskAsyncCodeActivity<int>
     {
         public InArgument<string> FilePath { get; set; }
-        
+
         public OutArgument<int> Result { get; set; }
-        
-        static async Task<int> HandleFileAsync(string file)
+
+        private static async Task<int> HandleFileAsync(string file)
         {
             int count = 0;
 
@@ -29,28 +29,26 @@ namespace AM.Skeleton.Activities.AsyncExample
                 for (int i = 0; i < 10000; i++)
                 {
                     int x = v.GetHashCode();
-                    if (x == 0)
-                    {
-                        count--;
-                    }
+                    if (x == 0) count--;
                 }
             }
 
             return count;
         }
-        
+
         /// <summary>
-        /// Execute a long running Task
+        ///     Execute a long running Task
         /// </summary>
-        protected override Task<int> ExecuteAsyncWithResult(AsyncCodeActivityContext context, CancellationToken cancellationToken)
+        protected override Task<int> ExecuteAsyncWithResult(AsyncCodeActivityContext context,
+            CancellationToken cancellationToken)
         {
             string file = FilePath.Get(context);
-            
-            return Task.Factory.StartNew(()=> HandleFileAsync(file),cancellationToken).Result;
+
+            return Task.Factory.StartNew(() => HandleFileAsync(file), cancellationToken).Result;
         }
 
         /// <summary>
-        /// On Task completion the result will be set
+        ///     On Task completion the result will be set
         /// </summary>
         protected override void OutputResult(AsyncCodeActivityContext context, int result)
         {

@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Activities;
+﻿using System.Activities;
 using System.Activities.Presentation.PropertyEditing;
 using System.ComponentModel;
 using AM.Common.Activities.BaseActivities;
@@ -9,7 +8,6 @@ using AM.Skeleton.Application;
 
 namespace AM.Skeleton.Activities
 {
-
     public sealed class ExampleCodeActivity : AbstractCodeActivity
     {
         // Attributes can be set either directly above the properties as shown here, or loaded though xml files.
@@ -19,15 +17,14 @@ namespace AM.Skeleton.Activities
         [VariableSelectionInputTextPopup]
         [Description("This text will be shown in the output")]
         public InArgument<string> Text { get; set; }
-        
+
         // InArgument's can be extended with a custom editor to add more functionality. In this case it will show a FileDialog
         [Editor(typeof(FileBrowserDialogEditor), typeof(DialogPropertyValueEditor))]
         public InArgument<string> CustomEditor { get; set; }
 
         // Enums will be displayed as DropdownBox in the options panel    
         public ExamplePropertyOptions Options { get; set; }
-        
-        
+
         [Category("Output")]
         [DisplayName("Output*")]
         [RequiredArgument]
@@ -41,16 +38,17 @@ namespace AM.Skeleton.Activities
         {
             // Obtain the runtime value of the Text input argument
             string text = context.GetValue(Text);
-            
+
             // Obtain the runtime value of the CustomEditor input argument
             string customEditor = context.GetValue(CustomEditor);
-            
-            IExampleApplication test = new ExampleApplication();
-            string result = test.ReturnText(text);
-            
-            test.SetOption(Options);
-            
-            context.SetValue(Output,"This text will be shown: " + result);
+
+            IExampleApplication exampleApplication = new ExampleApplication();
+            string result = exampleApplication.ReturnText(text);
+
+            exampleApplication.SetOption(Options);
+            exampleApplication.ExampleEditor = customEditor;
+
+            context.SetValue(Output, "This text will be shown: " + result);
         }
     }
 }

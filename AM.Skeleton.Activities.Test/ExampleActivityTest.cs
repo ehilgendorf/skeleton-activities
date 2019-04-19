@@ -1,6 +1,6 @@
-﻿using System;
+﻿using AM.Skeleton.Application;
 using NUnit.Framework;
-using AM.Skeleton.Application;
+
 namespace AM.Skeleton.Activities.Test
 {
     [TestFixture]
@@ -12,10 +12,8 @@ namespace AM.Skeleton.Activities.Test
         public void ReturnTextTest(string value)
         {
             IExampleApplication test = new ExampleApplication();
-            string testresult =  test.ReturnText(value);
-            Assert.That(testresult,Is.EqualTo("This text will be shown: " + value));
-
+            string testresult = test.ReturnText(value);
+            Assert.That(testresult, Is.EqualTo("This text will be shown: " + value));
         }
     }
 }
- 

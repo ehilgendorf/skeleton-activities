@@ -4,6 +4,9 @@ using System.Windows.Forms;
 
 namespace AM.Skeleton.Activities.Design.CustomEditor
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class FileBrowserDialogEditor : DialogPropertyValueEditor
     {
         public FileBrowserDialogEditor()
@@ -17,10 +20,7 @@ namespace AM.Skeleton.Activities.Design.CustomEditor
             // Instead of a Open File dialog you can start a Custom Window
             OpenFileDialog browse = new OpenFileDialog();
 
-            if (browse.ShowDialog() == DialogResult.OK)
-            {
-                propertyValue.StringValue = browse.FileName;
-            }
+            if (browse.ShowDialog() == DialogResult.OK) propertyValue.StringValue = browse.FileName;
             browse.Dispose();
         }
     }
