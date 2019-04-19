@@ -128,6 +128,7 @@
     <Compile Include="AsyncExample\AsyncWithResultActivity.cs" />
     <Compile Include="DatabaseExample\DatabaseExampleActivity.cs" />
     <Compile Include="ErrorMessageExample\ErrorMessageCodeActivity.cs" />
+    <Compile Include="ErrorMessageExample\WarningMessageActivity.cs" />
     <Compile Include="ExampleCodeActivity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScopeExample\ChildActivity.cs" />

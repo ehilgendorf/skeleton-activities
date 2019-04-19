@@ -1,9 +1,12 @@
 ﻿using System.Activities;
+using System.Activities.Validation;
 using AM.Common.Activities.BaseActivities;
 
 namespace AM.Skeleton.Activities.ErrorMessageExample
 {
-    public sealed class ErrorMessageActivity : AbstractCodeActivity
+    /// <summary>
+    /// </summary>
+    public sealed class WarningMessageActivity : AbstractCodeActivity
     {
         public InArgument<string> Text { get; set; }
 
@@ -14,6 +17,7 @@ namespace AM.Skeleton.Activities.ErrorMessageExample
             // Obtain the runtime value of the Text input argument
             string text = context.GetValue(Text);
 
+            // Set the Output argument using the specified activity context.
             Output.Set(context, $"Input text is: {text}");
         }
 
@@ -22,8 +26,12 @@ namespace AM.Skeleton.Activities.ErrorMessageExample
         {
             base.CacheMetadata(metadata);
 
-            // If the Argument Text has not been set, show a error message in the Composer
-            if (Text == null) metadata.AddValidationError("Argument Text has not been set.");
+            // If the Argument Text has not been set, show a warning message in the Composer
+            if (Text == null)
+            {
+                ValidationError validationWarning = new ValidationError("Argument Text has not been set.", true);
+                metadata.AddValidationError(validationWarning);
+            }
         }
     }
 }
