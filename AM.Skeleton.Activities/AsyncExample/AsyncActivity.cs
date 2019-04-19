@@ -23,7 +23,7 @@ namespace AM.Skeleton.Activities.AsyncExample
         [Category("Input")] // The argument is show in a specific category on the property panel.
         [VariableSelectionInputTextPopup] // For this attribute, we show a variable dialog.
         [Editor(typeof(FileBrowserDialogEditor),
-            typeof(DialogPropertyValueEditor))] // Adds a Custom Editor that shows a Expression Textbox with a FileDialog button.
+            typeof(DialogPropertyValueEditor))] // InArgument's can be displayed with a custom editor to add more functionality. In this case it will show a FileDialog
         public InArgument<string> FilePath { get; set; }
 
         /// <summary>
