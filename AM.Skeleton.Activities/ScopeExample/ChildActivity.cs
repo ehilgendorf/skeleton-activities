@@ -1,21 +1,44 @@
 using System.Activities;
 using AM.Common.Activities;
 using AM.Common.Activities.BaseActivities;
+using AM.Skeleton.Application;
 
 namespace AM.Skeleton.Activities.ScopeExample
 {
+    /// <summary>
+    ///     Child Activity that gets the ExampleApplication object from the parent
+    /// </summary>
     public class ChildActivity : AbstractCodeActivity
     {
         public ChildActivity()
         {
-            // Indicates that this activity needs to reside inside a specific activity in this case the ScopeActivity example
+            // Indicates that this activity should reside inside a specific scope activity in this case ScopeActivity
             Constraints.Add(
                 ActivityConstraints.CreateAncestorConstraint<ChildActivity>(typeof(ScopeActivity),
                     isWarning: true));
         }
 
+        /// <summary>
+        ///     Output argument that shows the option that has been set in the scope activity.
+        /// </summary>
+        private OutArgument<string> Option { get; set; }
+
+        /// <summary>
+        ///     Executes the Activity, gets the context object from the scope and sets the value into Option argument.
+        /// </summary>
+        /// <param name="context">The execution context of the activity.</param>
         protected override void ExecuteActivity(CodeActivityContext context)
         {
+            // Get the ExampleApplication that has been set in the scope activity from the current context.
+            IExampleApplication exampleApplication =
+                context.DataContext.GetProperties()[ScopeActivity.ScopeContextItemName].GetValue(context.DataContext) as
+                    IExampleApplication;
+
+            if (exampleApplication != null)
+            {
+                ExamplePropertyOptions option = exampleApplication.GetOption();
+                Option.Set(context, option.ToString());
+            }
         }
     }
 }

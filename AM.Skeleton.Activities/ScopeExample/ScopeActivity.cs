@@ -7,42 +7,58 @@ using AM.Skeleton.Application;
 
 namespace AM.Skeleton.Activities.ScopeExample
 {
+    /// <summary>
+    ///     Example of how to create a Scope activity that passes an object down to its children
+    /// </summary>
     public class ScopeActivity : AbstractScopeActivity
     {
         public ScopeActivity()
         {
+            // Declares a ActivityAction with the name from ScopeContextItemName, this allows child activities to get te context object from this activity.
             ActivityAction<object> action = new ActivityAction<object>
             {
                 Argument = new DelegateInArgument<object>(ScopeContextItemName)
             };
 
-            Flowchart flowchart = new Flowchart();
-            const string str = "Do";
-            flowchart.DisplayName = str;
+            // Creates a new Flowchart with the name Do.
+            Flowchart flowchart = new Flowchart
+            {
+                DisplayName = "Do"
+            };
+
+            // Adds the Flowchart to the action. 
             action.Handler = flowchart;
+
+            // As container we use the Action with the Flowchart. This allows children to get access to the OutArgument of this activity
             ContainerBody = action;
         }
 
-        public OutArgument<string> TextToPassToChildren { get; set; }
-
+        /// <summary>
+        ///     Name that will be used to get the Context object by.
+        /// </summary>
         public static string ScopeContextItemName => "ScopeActivityContextObject";
+
+        /// <summary>
+        ///     ExampleApplication object that will be made available for the child activities
+        /// </summary>
+        public OutArgument<IExampleApplication> ScopeExampleApplication { get; set; }
 
         protected override Task<object> ExecuteContainerActivity(NativeActivityContext context, CancellationToken token)
         {
             return Task.Factory.StartNew(() =>
             {
-                ExampleApplication app = new ExampleApplication();
+                // If ScopeExampleApplication is set use the provided value else create an ExampleApplication object.
+                IExampleApplication application = ScopeExampleApplication.Get(context) ?? new ExampleApplication();
 
-                // If TextToPassToChildren is set use the provided value else get text from ExampleApplication
-                string value = TextToPassToChildren.Get(context) ?? app.ReturnText("Text to pass to children");
+                application.SetOption(ExamplePropertyOptions.Option1);
 
-                return (object) value;
+                return (object) application;
             }, token);
         }
 
         protected override void SetResult(NativeActivityContext context, object result)
         {
-            TextToPassToChildren.Set(context, result);
+            ScopeExampleApplication.Set(context, result);
         }
     }
 }

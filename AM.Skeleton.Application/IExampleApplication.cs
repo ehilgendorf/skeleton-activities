@@ -3,8 +3,11 @@
     public interface IExampleApplication
     {
         string ExampleEditor { get; set; }
-        string ReturnText(string text);
+
+        string SetText(string text);
 
         void SetOption(ExamplePropertyOptions options);
+
+        ExamplePropertyOptions GetOption();
     }
 }

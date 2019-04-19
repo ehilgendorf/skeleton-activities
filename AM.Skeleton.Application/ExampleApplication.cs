@@ -6,7 +6,7 @@
 
         public string ExampleEditor { get; set; }
 
-        public string ReturnText(string text)
+        public string SetText(string text)
         {
             return "This text will be shown: " + text;
         }
@@ -14,6 +14,11 @@
         public void SetOption(ExamplePropertyOptions options)
         {
             _options = options;
+        }
+
+        public ExamplePropertyOptions GetOption()
+        {
+            return _options;
         }
     }
 }
