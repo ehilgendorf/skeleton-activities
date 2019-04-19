@@ -3,10 +3,19 @@ using AM.Common.Activities.BaseActivities;
 
 namespace AM.Skeleton.Activities.ErrorMessageExample
 {
+    /// <summary>
+    ///     An example of how to create a custom error message
+    /// </summary>
     public sealed class ErrorMessageActivity : AbstractCodeActivity
     {
+        /// <summary>
+        ///     Input argument that needs to be set to execute this activity
+        /// </summary>
         public InArgument<string> Text { get; set; }
 
+        /// <summary>
+        ///     The output of this activity
+        /// </summary>
         public OutArgument<string> Output { get; set; }
 
         protected override void ExecuteActivity(CodeActivityContext context)
