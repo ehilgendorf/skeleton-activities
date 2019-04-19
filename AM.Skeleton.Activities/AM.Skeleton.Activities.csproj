@@ -126,6 +126,7 @@
   <ItemGroup>
     <Compile Include="AsyncExample\AsyncActivity.cs" />
     <Compile Include="AsyncExample\AsyncWithResultActivity.cs" />
+    <Compile Include="CustomEditor\CustomEditorCodeActivity.cs" />
     <Compile Include="DatabaseExample\DatabaseExampleActivity.cs" />
     <Compile Include="ErrorMessageExample\ErrorMessageCodeActivity.cs" />
     <Compile Include="ErrorMessageExample\WarningMessageActivity.cs" />
@@ -147,9 +148,6 @@
     <Content Include="AM.Skeleton.Activities_metadata.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CustomEditor" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\AutoItX.Dotnet.3.3.14.5\build\AutoItX.Dotnet.targets" Condition="Exists('..\packages\AutoItX.Dotnet.3.3.14.5\build\AutoItX.Dotnet.targets')" />
