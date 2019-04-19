@@ -12,8 +12,6 @@
                     Source="pack://application:,,/AM.Common.Activities.Design;component/StylingDictionaries/ActivityStyling.xaml" />
                 <ResourceDictionary>
                     <amConverters:PropertyDescriptionConverter x:Key="PropertyDescriptionConverter" />
-                    <ArgumentToExpressionConverter x:Key="ArgumentToExpressionConverter"
-                                                   xmlns="clr-namespace:System.Activities.Presentation.Converters;assembly=System.Activities.Presentation" />
                 </ResourceDictionary>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>

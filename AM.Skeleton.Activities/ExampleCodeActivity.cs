@@ -32,8 +32,11 @@ namespace AM.Skeleton.Activities
         [Description("The result of your activity will be shown in this activity")]
         public OutArgument<string> Output { get; set; }
 
-        // If your activity returns a value, derive from AbstractCodeActivity<TResult>
-        // and return the value from the Execute method.
+        
+        /// <summary>
+        /// If your activity returns a value, derive from <see cref="AbstractCodeActivity{T}"/>
+        /// and return the value from the Execute method.</summary>
+        /// <param name="context"></param>
         protected override void ExecuteActivity(CodeActivityContext context)
         {
             // Obtain the runtime value of the Text input argument
@@ -43,7 +46,7 @@ namespace AM.Skeleton.Activities
             string customEditor = context.GetValue(CustomEditor);
 
             IExampleApplication exampleApplication = new ExampleApplication();
-            string result = exampleApplication.ReturnText(text);
+            string result = exampleApplication.SetText(text);
 
             exampleApplication.SetOption(Options);
             exampleApplication.ExampleEditor = customEditor;

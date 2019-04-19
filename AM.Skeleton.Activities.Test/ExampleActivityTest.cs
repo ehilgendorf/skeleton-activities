@@ -12,7 +12,7 @@ namespace AM.Skeleton.Activities.Test
         public void ReturnTextTest(string value)
         {
             IExampleApplication test = new ExampleApplication();
-            string testresult = test.ReturnText(value);
+            string testresult = test.SetText(value);
             Assert.That(testresult, Is.EqualTo("This text will be shown: " + value));
         }
     }
