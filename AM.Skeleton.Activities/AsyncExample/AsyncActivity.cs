@@ -11,20 +11,21 @@ using AM.Core.ActivityDesignBase.Attributes;
 namespace AM.Skeleton.Activities.AsyncExample
 {
     /// <summary>
-    /// Activity that runs a Task asynchronously 
+    ///     Activity that runs a Task asynchronously
     /// </summary>
     public class AsyncActivity : AbstractTaskAsyncCodeActivity
     {
         /// <summary>
-        /// Input Argument of the type sting to a file that will be processed asynchronously
+        ///     Input Argument of the type sting to a file that will be processed asynchronously
         /// </summary>
         [Category("Input")] // Set the category name in the property panel for this Argument
         [VariableSelectionInputTextPopup] // For this attribute we use variable pop-up box for text 
-        [Editor(typeof(FileBrowserDialogEditor), typeof(DialogPropertyValueEditor))]// Custom editor to show a file path control next to the expression textbox in the property panel
+        [Editor(typeof(FileBrowserDialogEditor),
+            typeof(DialogPropertyValueEditor))] // Custom editor to show a file path control next to the expression textbox in the property panel
         public InArgument<string> FilePath { get; set; }
-        
+
         /// <summary>
-        /// Asynchronous function that will process a file
+        ///     Asynchronous function that will process a file
         /// </summary>
         /// <param name="file">Path to the file that will be processed</param>
         private static async void HandleFileAsync(string file)
@@ -50,7 +51,6 @@ namespace AM.Skeleton.Activities.AsyncExample
         }
 
         /// <summary>
-        /// 
         /// </summary>
         /// <param name="context"></param>
         /// <param name="cancellationToken"></param>

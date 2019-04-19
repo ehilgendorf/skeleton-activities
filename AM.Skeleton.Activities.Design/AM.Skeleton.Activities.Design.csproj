@@ -108,15 +108,16 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="AsyncActivityDesign.xaml">
+    <Compile Include="ScopeActivityDesigns\ChildActivityDesign.xaml.cs">
+      <DependentUpon>ChildActivityDesign.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScopeActivityDesigns\ScopeActivityAnalystDesigner.xaml.cs" />
+    <Page Include="AsyncActivityDesigns\AsyncActivityDesign.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="AsyncWithResultActivityDesign.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ChildActivityDesign.xaml">
+    <Page Include="AsyncActivityDesigns\AsyncWithResultActivityDesign.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -125,19 +126,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="AsyncActivityDesign.xaml.cs">
+    <Compile Include="AsyncActivityDesigns\AsyncActivityDesign.xaml.cs">
       <DependentUpon>AsyncActivityDesign.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="AsyncWithResultActivityDesign.xaml.cs">
+    <Compile Include="AsyncActivityDesigns\AsyncWithResultActivityDesign.xaml.cs">
       <DependentUpon>AsyncWithResultActivityDesign.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ChildActivityDesign.xaml.cs">
-      <DependentUpon>ChildActivityDesign.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="CustomEditor\FileBrowserDialog.cs" />
+    <Compile Include="CustomEditor\FileBrowserDialogEditor.cs" />
     <Compile Include="CustomEditor\Resources\EditorResources.xaml.cs">
       <DependentUpon>EditorResources.xaml</DependentUpon>
     </Compile>
@@ -145,10 +142,14 @@
       <DependentUpon>ExampleActivityDesign.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ScopeActivityDesigns\ChildActivityDesign.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ScopeActivityDesigns\ScopeActivityAnalystDesigner.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DesignerMetadata.cs" />
-    <Compile Include="ScopeActivityAnalystDesigner.xaml.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -181,7 +182,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="ScopeActivityAnalystDesigner.xaml" />
+    <Folder Include="CustomControl" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\AutoItX.Dotnet.3.3.14.5\build\AutoItX.Dotnet.targets" Condition="Exists('..\packages\AutoItX.Dotnet.3.3.14.5\build\AutoItX.Dotnet.targets')" />

@@ -10,8 +10,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary
                     Source="pack://application:,,/AM.Common.Activities.Design;component/StylingDictionaries/ActivityStyling.xaml" />
-                <ResourceDictionary>
-                </ResourceDictionary>
+                <ResourceDictionary />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </FrameworkElement.Resources>

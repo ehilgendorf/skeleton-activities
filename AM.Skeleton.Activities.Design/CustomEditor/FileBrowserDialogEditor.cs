@@ -18,6 +18,7 @@ namespace AM.Skeleton.Activities.Design.CustomEditor
         }
 
         /// <summary>
+        ///     Shows the dialog when the EditModeSwitchButton event is triggered
         /// </summary>
         /// <param name="propertyValue">Maintains a data model for the value of a property in the property grid.</param>
         /// <param name="commandSource">

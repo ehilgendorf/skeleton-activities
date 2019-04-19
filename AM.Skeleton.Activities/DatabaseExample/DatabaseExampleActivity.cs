@@ -59,7 +59,7 @@ namespace AM.Skeleton.Activities.DatabaseExample
                             using (SqlCommand sqlCommand = new SqlCommand(query, connection))
                             {
                                 connection.Open();
-                                
+
                                 // Fill the Datable with the request data
                                 using (SqlDataAdapter dataAdapter = new SqlDataAdapter(sqlCommand))
                                 {
@@ -85,7 +85,7 @@ namespace AM.Skeleton.Activities.DatabaseExample
         ///     Set the Output Argument after Task completion.
         /// </summary>
         /// <param name="context">The execution context for an asynchronous activity.</param>
-        /// <param name="result">The result of the Database interaction as DataTable object</param>
+        /// <param name="result">The result of the Database interaction as DataTable object.</param>
         protected override void OutputResult(AsyncCodeActivityContext context, DataTable result)
         {
             ResultTable.Set(context, result);

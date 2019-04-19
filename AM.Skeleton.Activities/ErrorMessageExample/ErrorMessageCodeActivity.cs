@@ -1,7 +1,7 @@
 ﻿using System.Activities;
 using AM.Common.Activities.BaseActivities;
 
-namespace AM.Skeleton.Activities
+namespace AM.Skeleton.Activities.ErrorMessageExample
 {
     public sealed class ErrorMessageCodeActivity : AbstractCodeActivity
     {
