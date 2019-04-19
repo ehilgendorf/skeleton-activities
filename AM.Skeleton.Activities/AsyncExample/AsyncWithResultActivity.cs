@@ -6,7 +6,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using AM.Common.Activities.BaseActivities;
 using AM.Common.Activities.Design.Editors;
-using AM.Core.ActivityDesignBase.Attributes;
 
 namespace AM.Skeleton.Activities.AsyncExample
 {
@@ -20,8 +19,6 @@ namespace AM.Skeleton.Activities.AsyncExample
         /// <summary>
         ///     Path to a file that will be processed asynchronously
         /// </summary>
-        [Category("Input")] // The argument is show in a specific category on the property panel.
-        [VariableSelectionInputTextPopup] // For this attribute, we show a variable dialog.
         [Editor(typeof(FileBrowserDialogEditor),
             typeof(DialogPropertyValueEditor))] // InArgument's can be displayed with a custom editor to add more functionality. In this case it will show a FileDialog
         public InArgument<string> FilePath { get; set; }
