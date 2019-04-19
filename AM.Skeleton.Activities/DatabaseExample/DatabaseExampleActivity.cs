@@ -12,28 +12,27 @@ using AM.Logging;
 namespace AM.Skeleton.Activities.DatabaseExample
 {
     /// <summary>
-    /// Example on how to interact with the SQL server from the Composer Environment Settings
-    ///
-    /// This example is not SQL Injection safe and should not be used in production and just a very basic example. 
+    ///     Example on how to interact with the SQL server from the Composer Environment Settings.
+    ///     This example is not SQL Injection safe and should not be used in production and just a very basic example.
     /// </summary>
     public class DatabaseExampleActivity : AbstractDatabaseActivity<DataTable>
     {
         /// <summary>
-        /// Input Argument of a SQL Query to select data by.
+        ///     Input Argument of a SQL Query to select data by.
         /// </summary>
         [Category("Input")]
         [VariableSelectionInputTextPopup]
         public InArgument<string> Query { get; set; }
 
         /// <summary>
-        /// Output Argument to return the requested data as a DataTable
+        ///     Output Argument to return the requested data as a DataTable
         /// </summary>
         [Category("Output")]
         [VariableSelectionOutputPopup]
         public OutArgument<DataTable> ResultTable { get; set; }
 
         /// <summary>
-        /// Asynchronously execute the activity
+        ///     Asynchronously execute the activity
         /// </summary>
         /// <param name="context">The execution context for an asynchronous activity.</param>
         /// <param name="cancellationToken">Propagates notification that operations should be canceled.</param>
@@ -42,7 +41,7 @@ namespace AM.Skeleton.Activities.DatabaseExample
             CancellationToken cancellationToken)
         {
             string query = context.GetValue(Query);
-            
+
             // Connection string from the Composer's Environment Settings.
             string connectionString = GetConnectionString(context);
 
@@ -56,11 +55,13 @@ namespace AM.Skeleton.Activities.DatabaseExample
                         // Create a SQL connection to the Server
                         using (SqlConnection connection = new SqlConnection(connectionString))
                         {
-                            
-                            using (SqlCommand cmd = new SqlCommand(query, connection))
+                            // Execute SQL Query
+                            using (SqlCommand sqlCommand = new SqlCommand(query, connection))
                             {
                                 connection.Open();
-                                using (SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd))
+                                
+                                // Fill the Datable with the request data
+                                using (SqlDataAdapter dataAdapter = new SqlDataAdapter(sqlCommand))
                                 {
                                     dataAdapter.Fill(dataTable);
                                     connection.Close();
@@ -68,6 +69,7 @@ namespace AM.Skeleton.Activities.DatabaseExample
                             }
                         }
 
+                        // After a successful execution return the DataTable
                         return dataTable;
                     }
                     catch (Exception ex)
@@ -80,7 +82,7 @@ namespace AM.Skeleton.Activities.DatabaseExample
         }
 
         /// <summary>
-        /// Set the Output Argument after Task completion.
+        ///     Set the Output Argument after Task completion.
         /// </summary>
         /// <param name="context">The execution context for an asynchronous activity.</param>
         /// <param name="result">The result of the Database interaction as DataTable object</param>
