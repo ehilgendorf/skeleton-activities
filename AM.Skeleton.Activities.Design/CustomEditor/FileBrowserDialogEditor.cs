@@ -1,6 +1,7 @@
 using System.Activities.Presentation.PropertyEditing;
 using System.Windows;
 using System.Windows.Forms;
+using AM.Skeleton.Activities.Design.CustomEditor.Resources;
 
 namespace AM.Skeleton.Activities.Design.CustomEditor
 {
@@ -16,6 +17,13 @@ namespace AM.Skeleton.Activities.Design.CustomEditor
             InlineEditorTemplate = (DataTemplate) EditorResources.GetResources()["ExampleEditor"];
         }
 
+        /// <summary>
+        /// </summary>
+        /// <param name="propertyValue">Maintains a data model for the value of a property in the property grid.</param>
+        /// <param name="commandSource">
+        ///     Establishes the common events and also the event-related properties and methods for basic
+        ///     input processing by Windows Presentation Foundation (WPF) elements.
+        /// </param>
         public override void ShowDialog(PropertyValue propertyValue,
             IInputElement commandSource)
         {
