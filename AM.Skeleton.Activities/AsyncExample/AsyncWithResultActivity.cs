@@ -1,17 +1,40 @@
 using System.Activities;
+using System.Activities.Presentation.PropertyEditing;
+using System.ComponentModel;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 using AM.Common.Activities.BaseActivities;
+using AM.Common.Activities.Design.Editors;
+using AM.Core.ActivityDesignBase.Attributes;
 
 namespace AM.Skeleton.Activities.AsyncExample
 {
+    /// <summary>
+    ///     Activity that runs a Task asynchronously and returns a value on completion,
+    ///     <see cref="AbstractTaskAsyncCodeActivity" /> handles delays, cancellation's and error handling.
+    ///     To simple run a Task see <see cref="AsyncActivity" /> for a example
+    /// </summary>
     public class AsyncWithResultActivity : AbstractTaskAsyncCodeActivity<int>
     {
+        /// <summary>
+        ///     Path to a file that will be processed asynchronously
+        /// </summary>
+        [Category("Input")] // The argument is show in a specific category on the property panel.
+        [VariableSelectionInputTextPopup] // For this attribute, we show a variable dialog.
+        [Editor(typeof(FileBrowserDialogEditor),
+            typeof(DialogPropertyValueEditor))] // Adds a Custom Editor that shows a Expression Textbox with a FileDialog button.
         public InArgument<string> FilePath { get; set; }
 
+        /// <summary>
+        ///     Result of the asynchronously Processed File
+        /// </summary>
         public OutArgument<int> Result { get; set; }
 
+        /// <summary>
+        ///     Asynchronous function that will process a file and returns a <see cref="Task{TResult}" />
+        /// </summary>
+        /// <param name="file">Path to the file that will be processed</param>
         private static async Task<int> HandleFileAsync(string file)
         {
             int count = 0;

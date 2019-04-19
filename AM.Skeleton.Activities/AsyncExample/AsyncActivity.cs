@@ -11,17 +11,19 @@ using AM.Core.ActivityDesignBase.Attributes;
 namespace AM.Skeleton.Activities.AsyncExample
 {
     /// <summary>
-    ///     Activity that runs a Task asynchronously
+    ///     Activity that runs a Task asynchronously, <see cref="AbstractTaskAsyncCodeActivity" /> handles delays,
+    ///     cancellation's and error handling.
+    ///     To return a value from a Task see <see cref="AsyncWithResultActivity" /> for a example
     /// </summary>
     public class AsyncActivity : AbstractTaskAsyncCodeActivity
     {
         /// <summary>
         ///     Input Argument of the type sting to a file that will be processed asynchronously
         /// </summary>
-        [Category("Input")] // Set the category name in the property panel for this Argument
-        [VariableSelectionInputTextPopup] // For this attribute we use variable pop-up box for text 
+        [Category("Input")] // The argument is show in a specific category on the property panel.
+        [VariableSelectionInputTextPopup] // For this attribute, we show a variable dialog.
         [Editor(typeof(FileBrowserDialogEditor),
-            typeof(DialogPropertyValueEditor))] // Custom editor to show a file path control next to the expression textbox in the property panel
+            typeof(DialogPropertyValueEditor))] // Adds a Custom Editor that shows a Expression Textbox with a FileDialog button.
         public InArgument<string> FilePath { get; set; }
 
         /// <summary>
@@ -52,11 +54,12 @@ namespace AM.Skeleton.Activities.AsyncExample
 
         /// <summary>
         /// </summary>
-        /// <param name="context"></param>
-        /// <param name="cancellationToken"></param>
+        /// <param name="context">The execution context for an asynchronous activity.</param>
+        /// <param name="cancellationToken">Propagates notification that operations should be canceled.</param>
         /// <returns>Represents an asynchronous operation.</returns>
         protected override Task ExecuteAsync(AsyncCodeActivityContext context, CancellationToken cancellationToken)
         {
+            // In order to set FilePath, the
             string file = FilePath.Get(context);
 
             return Task.Factory.StartNew(() => HandleFileAsync(file), cancellationToken);
