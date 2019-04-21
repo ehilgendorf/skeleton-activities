@@ -1,9 +1,10 @@
 using AM.Core.ActivityDesignBase;
 using AM.Skeleton.Activities.DatabaseExample;
 
-namespace AM.Skeleton.Activities.Design.Generated.DatabaseExample
+namespace AM.Skeleton.Activities.Design.DatabaseExample
 {
-    [DeveloperDesigner(typeof(DatabaseExampleActivity))]
+    [DeveloperDesigner(
+        typeof(DatabaseExampleActivity))] // Indicates that this Design will be used for the Developer view in the composer
     public partial class DatabaseExampleDeveloperDesigner
     {
         public DatabaseExampleDeveloperDesigner()
