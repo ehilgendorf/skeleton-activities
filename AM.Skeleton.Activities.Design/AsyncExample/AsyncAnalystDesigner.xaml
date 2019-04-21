@@ -1,0 +1,39 @@
+<sap:ActivityDesigner 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:activityWrappers="clr-namespace:AM.Common.Activities.Design.ActivityWrappers;assembly=AM.Common.Activities.Design" 
+    xmlns:amConverters="clr-namespace:AM.Common.Activities.Design.Converters;assembly=AM.Common.Activities.Design" 
+    xmlns:system="clr-namespace:System;assembly=mscorlib" 
+    xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:customControls="clr-namespace:AM.Common.Activities.Design.CustomControls;assembly=AM.Common.Activities.Design" 
+    x:Class="AM.Skeleton.Activities.Design.Generated.AsyncExample.AsyncAnalystDesigner" 
+    xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation">
+    <FrameworkElement.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,/AM.Common.Activities.Design;component/StylingDictionaries/ActivityStyling.xaml" />
+                <ResourceDictionary>
+                    <amConverters:PropertyDescriptionConverter x:Key="PropertyDescriptionConverter" />
+                    <ArgumentToExpressionConverter x:Key="ArgumentToExpressionConverter" 
+    xmlns="clr-namespace:System.Activities.Presentation.Converters;assembly=System.Activities.Presentation" />
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </FrameworkElement.Resources>
+    <sap:ActivityDesigner.Style>
+        <Style TargetType="{x:Type sap:ActivityDesigner}" BasedOn="{StaticResource CodeActivityStyle}" />
+    </sap:ActivityDesigner.Style>
+    <activityWrappers:CodeActivityWrapper>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Text="File Path" ToolTip="{Binding ConverterParameter=FilePath, Converter={StaticResource PropertyDescriptionConverter}}" />
+            <customControls:FilePathControl Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Expression="{Binding Path=ModelItem.FilePath, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" PropertyName="FilePath" ModelItem="{Binding Path=ModelItem}" Title="Select a file" IsSaveDialog="false" />
+        </Grid>
+    </activityWrappers:CodeActivityWrapper>
+</sap:ActivityDesigner>

@@ -19,7 +19,7 @@ namespace AM.Skeleton.Activities.Design
         /// <summary>
         ///     Loads metadata from an xml file.
         /// </summary>
-        /// <param name="builder"></param>
+        /// <param name="builder"><see cref="System.Activities.Presentation.Metadata.AttributeTableBuilder"/></param>
         private static void LoadMetadata(AttributeTableBuilder builder)
         {
             string metadataFile = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) +

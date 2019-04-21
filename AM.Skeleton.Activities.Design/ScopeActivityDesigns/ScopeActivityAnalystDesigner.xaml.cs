@@ -4,7 +4,7 @@ using AM.Common.Activities.Design.DesignsInterfaces;
 using AM.Core.ActivityDesignBase;
 using AM.Skeleton.Activities.ScopeExample;
 
-namespace AM.Skeleton.Activities.Design
+namespace AM.Skeleton.Activities.Design.ScopeActivityDesigns
 {
     [AnalystDesigner(typeof(ScopeActivity))]
     public partial class ScopeActivityAnalystDesigner : IScopeNavigationIcon

@@ -21,7 +21,7 @@ namespace AM.Skeleton.Activities.ScopeExample
         /// <summary>
         ///     Output argument that shows the option that has been set in the scope activity.
         /// </summary>
-        private OutArgument<string> Option { get; set; }
+        public OutArgument<string> Option { get; set; }
 
         /// <summary>
         ///     Executes the Activity, gets the context object from the scope and sets the value into Option argument.

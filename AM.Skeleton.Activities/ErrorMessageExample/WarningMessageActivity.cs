@@ -19,6 +19,7 @@ namespace AM.Skeleton.Activities.ErrorMessageExample
         /// </summary>
         public OutArgument<string> Output { get; set; }
 
+        /// <inheritdoc/>
         protected override void ExecuteActivity(CodeActivityContext context)
         {
             // Obtain the runtime value of the Text input argument
