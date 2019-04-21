@@ -49,6 +49,7 @@
       <HintPath>..\packages\NUnit.3.10.1\lib\net45\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Activities" />
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
@@ -59,6 +60,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AM.Skeleton.Activities\AM.Skeleton.Activities.csproj">
+      <Project>{2eb1529c-04cb-4820-bc4e-7296da688480}</Project>
+      <Name>AM.Skeleton.Activities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AM.Skeleton.Application\AM.Skeleton.Application.csproj">
       <Project>{9c9117b4-64d7-45fd-a967-8f6deeb894cd}</Project>
       <Name>AM.Skeleton.Application</Name>
