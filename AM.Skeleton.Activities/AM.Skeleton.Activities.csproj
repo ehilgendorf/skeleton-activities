@@ -35,36 +35,34 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AM.Common, Version=1.0.0.32, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\AM.Common.1.0.0.32\lib\net45\AM.Common.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\staticlibraries\AM.Common.dll</HintPath>
     </Reference>
-    <Reference Include="AM.Common.Activities, Version=1.1.1.465, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.Common.Activities.1.1.1.465\lib\net45\AM.Common.Activities.dll</HintPath>
+    <Reference Include="AM.Common.Activities, Version=1.1.1.465, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\staticlibraries\AM.Common.Activities.dll</HintPath>
     </Reference>
     <Reference Include="AM.Common.Activities.Design, Version=1.1.2.481, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\AM.Common.Activities.Design.1.1.2.481\lib\net45\AM.Common.Activities.Design.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\staticlibraries\AM.Common.Activities.Design.dll</HintPath>
     </Reference>
-    <Reference Include="AM.ComposerActivitiesBridge, Version=1.0.2.13, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.ComposerActivitiesBridge.1.0.2.13\lib\net45\AM.ComposerActivitiesBridge.dll</HintPath>
+    <Reference Include="AM.ComposerActivitiesBridge, Version=1.0.2.13, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\staticlibraries\AM.ComposerActivitiesBridge.dll</HintPath>
     </Reference>
-    <Reference Include="AM.Core.ActivityDesignBase, Version=1.0.25.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.Core.ActivityDesignBase.1.0.25\lib\net45\AM.Core.ActivityDesignBase.dll</HintPath>
+    <Reference Include="AM.Core.ActivityDesignBase, Version=1.0.25.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\staticlibraries\AM.Core.ActivityDesignBase.dll</HintPath>
     </Reference>
-    <Reference Include="AM.Core.ActivityLogger, Version=2.0.2.19, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.Core.ActivityLogger.2.0.2.19\lib\net45\AM.Core.ActivityLogger.dll</HintPath>
+    <Reference Include="AM.Core.ActivityLogger, Version=2.0.2.19, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\staticlibraries\AM.Core.ActivityLogger.dll</HintPath>
     </Reference>
-    <Reference Include="AM.Core.Protocol.Writer, Version=1.2.0.24, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.Core.Protocol.Writer.1.2.0.24\lib\net45\AM.Core.Protocol.Writer.dll</HintPath>
+    <Reference Include="AM.Core.Protocol.Writer, Version=1.2.0.24, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\staticlibraries\AM.Core.Protocol.Writer.dll</HintPath>
     </Reference>
-    <Reference Include="AM.DefaultActivities, Version=1.0.22.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.DefaultActivities.Design.1.0.22\lib\net45\AM.DefaultActivities.dll</HintPath>
+    <Reference Include="AM.DefaultActivities, Version=1.0.22.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\staticlibraries\AM.DefaultActivities.dll</HintPath>
     </Reference>
-    <Reference Include="AM.DefaultActivities.Design, Version=1.0.22.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.DefaultActivities.Design.1.0.22\lib\net45\AM.DefaultActivities.Design.dll</HintPath>
+    <Reference Include="AM.DefaultActivities.Design, Version=1.0.22.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\staticlibraries\AM.DefaultActivities.Design.dll</HintPath>
     </Reference>
-    <Reference Include="AM.Logging, Version=2.1.2.27, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.Logging.2.1.2.27\lib\net45\AM.Logging.dll</HintPath>
+    <Reference Include="AM.Logging, Version=2.1.2.27, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\staticlibraries\AM.Logging.dll</HintPath>
     </Reference>
     <Reference Include="AutoItX3.Assembly, Version=3.0.0.0, Culture=neutral, PublicKeyToken=a646454c8d475470, processorArchitecture=MSIL">
       <HintPath>..\packages\AutoItX.Dotnet.3.3.14.5\lib\AutoItX3.Assembly.dll</HintPath>

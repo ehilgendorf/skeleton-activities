@@ -56,7 +56,7 @@ namespace AM.Skeleton.Activities
             exampleApplication.ExampleEditor = customEditor;
 
             // Assigns the value to the Output property
-            context.SetValue(Output, "This text will be shown: " + result);
+            context.SetValue(Output, result);
         }
     }
 }
