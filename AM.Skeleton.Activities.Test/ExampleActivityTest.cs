@@ -23,7 +23,7 @@ namespace AM.Skeleton.Activities.Test
             // Invoke the activity and return all out arguments.
             IDictionary<string, object> output = WorkflowInvoker.Invoke(exampleCodeActivity, inputArguments);
 
-            // Get specific out argument, in this case; there is only one.
+            // Get specific out argument, in this case; there is only one 'Output'.
             string outputValue = output["Output"].ToString();
 
             // Assert that the output is equal to the input after processing.
