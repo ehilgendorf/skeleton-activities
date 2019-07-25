@@ -10,12 +10,13 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AM.Skeleton.Activities.Design</RootNamespace>
     <AssemblyName>AM.Skeleton.Activities.Design</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,7 +42,8 @@
     <Reference Include="AM.Common.Activities, Version=1.1.1.465, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\staticlibraries\AM.Common.Activities.dll</HintPath>
     </Reference>
-    <Reference Include="AM.Common.Activities.Design, Version=1.1.2.481, Culture=neutral, PublicKeyToken=null">
+    <Reference Include="AM.Common.Activities.Design, Version=1.2.5.502, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\staticlibraries\AM.Common.Activities.Design.dll</HintPath>
     </Reference>
     <Reference Include="AM.ComposerActivitiesBridge, Version=1.0.2.13, Culture=neutral, PublicKeyToken=null">

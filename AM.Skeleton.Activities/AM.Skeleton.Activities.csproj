@@ -11,10 +11,11 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AM.Skeleton.Activities</RootNamespace>
     <AssemblyName>AM.Skeleton.Activities</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,7 +41,8 @@
     <Reference Include="AM.Common.Activities, Version=1.1.1.465, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\staticlibraries\AM.Common.Activities.dll</HintPath>
     </Reference>
-    <Reference Include="AM.Common.Activities.Design, Version=1.1.2.481, Culture=neutral, PublicKeyToken=null">
+    <Reference Include="AM.Common.Activities.Design, Version=1.2.5.502, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\staticlibraries\AM.Common.Activities.Design.dll</HintPath>
     </Reference>
     <Reference Include="AM.ComposerActivitiesBridge, Version=1.0.2.13, Culture=neutral, PublicKeyToken=null">
