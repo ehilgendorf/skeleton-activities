@@ -44,15 +44,15 @@ namespace AM.Skeleton.Activities.ScopeExample
         public OutArgument<IExampleApplication> ScopeExampleApplication { get; set; }
 
         protected override Task<object> ExecuteContainerActivity(NativeActivityContext context, CancellationToken token)
-        {
+        {     
+            // If ScopeExampleApplication is set use the provided value else create an ExampleApplication object.
+            IExampleApplication application = ScopeExampleApplication.Get(context) ?? new ExampleApplication();
+
             return Task.Factory.StartNew(() =>
             {
-                // If ScopeExampleApplication is set use the provided value else create an ExampleApplication object.
-                IExampleApplication application = ScopeExampleApplication.Get(context) ?? new ExampleApplication();
-
                 application.SetOption(ExamplePropertyOptions.Option1);
 
-                return (object) application;
+                return (object)application;
             }, token);
         }
 
