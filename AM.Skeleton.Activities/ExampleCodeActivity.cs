@@ -21,7 +21,7 @@ namespace AM.Skeleton.Activities
         public InArgument<string> Text { get; set; }
 
         /// <summary>
-        ///     InArgument's can be extended with a custom editor to add more functionality. In this case it will show a FileDialog
+        ///     InArguments can be extended with a custom editor to add more functionality. In this case it will show a FileDialog
         /// </summary>
         [Editor(typeof(FileBrowserDialogEditor), typeof(DialogPropertyValueEditor))]
         public InArgument<string> CustomEditor { get; set; }

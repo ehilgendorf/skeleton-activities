@@ -11,7 +11,7 @@ namespace AM.Skeleton.Activities.AsyncExample
 {
     /// <summary>
     ///     Activity that runs a Task asynchronously, <see cref="AbstractTaskAsyncCodeActivity" /> handles delays,
-    ///     cancellation's and error handling.
+    ///     cancellation and error handling.
     ///     To return a value from a Task see <see cref="AsyncWithResultActivity" /> for a example
     /// </summary>
     public class AsyncActivity : AbstractTaskAsyncCodeActivity
@@ -20,7 +20,7 @@ namespace AM.Skeleton.Activities.AsyncExample
         ///     Input Argument of the type sting to a file that will be processed asynchronously
         /// </summary>
         [Editor(typeof(FileBrowserDialogEditor),
-            typeof(DialogPropertyValueEditor))] // InArgument's can be displayed with a custom editor to add more functionality. In this case it will show a FileDialog
+            typeof(DialogPropertyValueEditor))] // InArguments can be displayed with a custom editor to add more functionality. In this case it will show a FileDialog
         public InArgument<string> FilePath { get; set; }
 
         /// <summary>

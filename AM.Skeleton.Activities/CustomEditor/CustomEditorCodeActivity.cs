@@ -13,7 +13,7 @@ namespace AM.Skeleton.Activities.CustomEditor
     public sealed class CustomEditorCodeActivity : AbstractCodeActivity
     {
         /// <summary>
-        ///     InArgument's can be displayed with a custom editor to add more functionality. In this case it will show a
+        ///     InArguments can be displayed with a custom editor to add more functionality. In this case it will show a
         ///     FileDialog
         /// </summary>
         [Editor(typeof(FileBrowserDialogEditor), typeof(DialogPropertyValueEditor))]
