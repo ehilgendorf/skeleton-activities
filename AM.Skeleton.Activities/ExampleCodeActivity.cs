@@ -1,10 +1,10 @@
-﻿using System.Activities;
+﻿using AM.Common.Activities.BaseActivities;
+using AM.Common.Activities.Design.Editors;
+using AM.DefaultActivities.Design.Attributes;
+using AM.Skeleton.Application;
+using System.Activities;
 using System.Activities.Presentation.PropertyEditing;
 using System.ComponentModel;
-using AM.Common.Activities.BaseActivities;
-using AM.Common.Activities.Design.Editors;
-using AM.Core.ActivityDesignBase.Attributes;
-using AM.Skeleton.Application;
 
 namespace AM.Skeleton.Activities
 {

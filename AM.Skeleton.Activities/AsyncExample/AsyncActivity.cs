@@ -1,11 +1,11 @@
+using AM.Common.Activities.BaseActivities;
+using AM.Common.Activities.Design.Editors;
 using System.Activities;
 using System.Activities.Presentation.PropertyEditing;
 using System.ComponentModel;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
-using AM.Common.Activities.BaseActivities;
-using AM.Common.Activities.Design.Editors;
 
 namespace AM.Skeleton.Activities.AsyncExample
 {

@@ -1,4 +1,4 @@
-using AM.Core.ActivityDesignBase;
+using AM.DefaultActivities.Design;
 using AM.Skeleton.Activities.ErrorMessageExample;
 
 namespace AM.Skeleton.Activities.Design.ErrorMessageExample
