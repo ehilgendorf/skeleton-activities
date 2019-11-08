@@ -36,45 +36,50 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AM.Artefacts.Roles">
-      <HintPath>..\staticlibraries\AM.Artefacts.Roles.dll</HintPath>
+    <Reference Include="AM.Artefacts.Roles, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.ComposerActivitiesBridge.1.3.7\lib\net452\AM.Artefacts.Roles.dll</HintPath>
     </Reference>
-    <Reference Include="AM.Common.Activities">
-      <HintPath>..\staticlibraries\AM.Common.Activities.dll</HintPath>
+    <Reference Include="AM.Common.Activities, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.Common.Activities.1.3.25\lib\net452\AM.Common.Activities.dll</HintPath>
     </Reference>
-    <Reference Include="AM.Common.Activities.Design, Version=1.2.5.502, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\staticlibraries\AM.Common.Activities.Design.dll</HintPath>
+    <Reference Include="AM.Common.Activities.Design, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.Common.Activities.Design.1.3.25\lib\net452\AM.Common.Activities.Design.dll</HintPath>
     </Reference>
-    <Reference Include="AM.Common.Activities.Interfaces">
-      <HintPath>..\staticlibraries\AM.Common.Activities.Interfaces.dll</HintPath>
+    <Reference Include="AM.Common.Activities.Interfaces, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.Common.Activities.Interfaces.1.3.25\lib\net45\AM.Common.Activities.Interfaces.dll</HintPath>
     </Reference>
-    <Reference Include="AM.ComposerActivitiesBridge">
-      <HintPath>..\staticlibraries\AM.ComposerActivitiesBridge.dll</HintPath>
+    <Reference Include="AM.ComposerActivitiesBridge, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.ComposerActivitiesBridge.1.3.7\lib\net452\AM.ComposerActivitiesBridge.dll</HintPath>
     </Reference>
-    <Reference Include="AM.ComposerActivitiesBridge.Helper">
-      <HintPath>..\staticlibraries\AM.ComposerActivitiesBridge.Helper.dll</HintPath>
+    <Reference Include="AM.ComposerActivitiesBridge.Helper, Version=1.3.18.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.ComposerActivitiesBridge.Helper.1.3.18\lib\net452\AM.ComposerActivitiesBridge.Helper.dll</HintPath>
     </Reference>
-    <Reference Include="AM.ComposerActivitiesBridge.Threading">
-      <HintPath>..\staticlibraries\AM.ComposerActivitiesBridge.Threading.dll</HintPath>
+    <Reference Include="AM.ComposerActivitiesBridge.Threading, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.ComposerActivitiesBridge.1.3.7\lib\net452\AM.ComposerActivitiesBridge.Threading.dll</HintPath>
     </Reference>
-    <Reference Include="AM.Core.ActivityLogger, Version=2.0.2.19, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\staticlibraries\AM.Core.ActivityLogger.dll</HintPath>
+    <Reference Include="AM.Core.ActivityLogger, Version=2.0.2.19, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.Core.ActivityLogger.2.0.2.19\lib\net45\AM.Core.ActivityLogger.dll</HintPath>
     </Reference>
-    <Reference Include="AM.Core.Protocol.Writer">
-      <HintPath>..\staticlibraries\AM.Core.Protocol.Writer.dll</HintPath>
+    <Reference Include="AM.Core.Protocol.Writer, Version=1.2.1.26, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.Core.Protocol.Writer.1.2.1.26\lib\net45\AM.Core.Protocol.Writer.dll</HintPath>
     </Reference>
-    <Reference Include="AM.DefaultActivities">
-      <HintPath>..\staticlibraries\AM.DefaultActivities.dll</HintPath>
+    <Reference Include="AM.DefaultActivities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.DefaultActivities.Design.1.0.26\lib\net45\AM.DefaultActivities.dll</HintPath>
     </Reference>
-    <Reference Include="AM.DefaultActivities.Design">
-      <HintPath>..\staticlibraries\AM.DefaultActivities.Design.dll</HintPath>
+    <Reference Include="AM.DefaultActivities.Design, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.DefaultActivities.Design.1.0.26\lib\net45\AM.DefaultActivities.Design.dll</HintPath>
     </Reference>
-    <Reference Include="AM.Logging, Version=2.1.2.27, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\staticlibraries\AM.Logging.dll</HintPath>
+    <Reference Include="AM.Logging, Version=2.1.2.27, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.Logging.2.1.2.27\lib\net45\AM.Logging.dll</HintPath>
     </Reference>
-    <Reference Include="AM.Native.WindowsApi">
-      <HintPath>..\staticlibraries\AM.Native.WindowsApi.dll</HintPath>
+    <Reference Include="AM.Native.WindowsApi, Version=1.0.42.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.Native.WindowsApi.1.0.42\lib\net452\AM.Native.WindowsApi.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
@@ -82,9 +87,34 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="PresentationFramework" />
     <Reference Include="PresentationCore" />
+    <Reference Include="SharpVectors.Converters, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b532964b8548be77, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpVectors.1.0\lib\net20\SharpVectors.Converters.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpVectors.Core, Version=0.3.1.1588, Culture=neutral, PublicKeyToken=7407205e337c98ef, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpVectors.1.0\lib\net20\SharpVectors.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpVectors.Css, Version=0.3.1.1590, Culture=neutral, PublicKeyToken=7a46e3f532fdb787, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpVectors.1.0\lib\net20\SharpVectors.Css.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpVectors.Dom, Version=0.3.1.1589, Culture=neutral, PublicKeyToken=517340b6277b1a7a, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpVectors.1.0\lib\net20\SharpVectors.Dom.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpVectors.Model, Version=0.3.1.1592, Culture=neutral, PublicKeyToken=2236cfc76b505845, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpVectors.1.0\lib\net20\SharpVectors.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpVectors.Rendering.Gdi, Version=0.3.1.1595, Culture=neutral, PublicKeyToken=03902092284347e3, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpVectors.1.0\lib\net20\SharpVectors.Rendering.Gdi.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpVectors.Rendering.Wpf, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d0902381100df30e, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpVectors.1.0\lib\net20\SharpVectors.Rendering.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpVectors.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d16e717f0a981fb9, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpVectors.1.0\lib\net20\SharpVectors.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Activities" />
     <Reference Include="System.Activities.Presentation" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Runtime.Serialization" />
@@ -219,6 +249,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -230,6 +261,10 @@
     <ProjectReference Include="..\AM.Skeleton.Activities\AM.Skeleton.Activities.csproj">
       <Project>{2eb1529c-04cb-4820-bc4e-7296da688480}</Project>
       <Name>AM.Skeleton.Activities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AM.Skeleton.Application\AM.Skeleton.Application.csproj">
+      <Project>{9c9117b4-64d7-45fd-a967-8f6deeb894cd}</Project>
+      <Name>AM.Skeleton.Application</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
