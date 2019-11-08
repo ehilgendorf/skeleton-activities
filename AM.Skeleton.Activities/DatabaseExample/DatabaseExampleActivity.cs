@@ -1,3 +1,6 @@
+using AM.Common.Activities.BaseActivities;
+using AM.DefaultActivities.Design.Attributes;
+using AM.Logging;
 using System;
 using System.Activities;
 using System.ComponentModel;
@@ -5,9 +8,6 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Threading;
 using System.Threading.Tasks;
-using AM.Common.Activities.BaseActivities;
-using AM.Core.ActivityDesignBase.Attributes;
-using AM.Logging;
 
 namespace AM.Skeleton.Activities.DatabaseExample
 {

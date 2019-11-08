@@ -1,10 +1,10 @@
-﻿using System.Activities;
+﻿using AM.Common.Activities.BaseActivities;
+using AM.Common.Activities.Design.Editors;
+using AM.DefaultActivities.Design.Attributes;
+using AM.Skeleton.Application;
+using System.Activities;
 using System.Activities.Presentation.PropertyEditing;
 using System.ComponentModel;
-using AM.Common.Activities.BaseActivities;
-using AM.Common.Activities.Design.Editors;
-using AM.Core.ActivityDesignBase.Attributes;
-using AM.Skeleton.Application;
 
 namespace AM.Skeleton.Activities
 {
@@ -21,7 +21,7 @@ namespace AM.Skeleton.Activities
         public InArgument<string> Text { get; set; }
 
         /// <summary>
-        ///     InArgument's can be extended with a custom editor to add more functionality. In this case it will show a FileDialog
+        ///     InArguments can be extended with a custom editor to add more functionality. In this case it will show a FileDialog
         /// </summary>
         [Editor(typeof(FileBrowserDialogEditor), typeof(DialogPropertyValueEditor))]
         public InArgument<string> CustomEditor { get; set; }

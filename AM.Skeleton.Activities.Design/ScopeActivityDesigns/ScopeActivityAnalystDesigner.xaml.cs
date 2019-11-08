@@ -1,7 +1,7 @@
 using System.Activities.Presentation;
 using System.Windows;
 using AM.Common.Activities.Design.DesignsInterfaces;
-using AM.Core.ActivityDesignBase;
+using AM.DefaultActivities.Design;
 using AM.Skeleton.Activities.ScopeExample;
 
 namespace AM.Skeleton.Activities.Design.ScopeActivityDesigns
