@@ -40,8 +40,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AM.Artefacts.Roles, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.ComposerActivitiesBridge.1.3.7\lib\net452\AM.Artefacts.Roles.dll</HintPath>
+    <Reference Include="AM.Artefacts.Roles, Version=1.3.18.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.ComposerActivitiesBridge.1.3.18\lib\net452\AM.Artefacts.Roles.dll</HintPath>
     </Reference>
     <Reference Include="AM.Common.Activities, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AM.Common.Activities.1.3.25\lib\net452\AM.Common.Activities.dll</HintPath>
@@ -49,14 +49,14 @@
     <Reference Include="AM.Common.Activities.Interfaces, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AM.Common.Activities.Interfaces.1.3.25\lib\net45\AM.Common.Activities.Interfaces.dll</HintPath>
     </Reference>
-    <Reference Include="AM.ComposerActivitiesBridge, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.ComposerActivitiesBridge.1.3.7\lib\net452\AM.ComposerActivitiesBridge.dll</HintPath>
+    <Reference Include="AM.ComposerActivitiesBridge, Version=1.3.18.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.ComposerActivitiesBridge.1.3.18\lib\net452\AM.ComposerActivitiesBridge.dll</HintPath>
     </Reference>
-    <Reference Include="AM.ComposerActivitiesBridge.Helper, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.ComposerActivitiesBridge.1.3.7\lib\net452\AM.ComposerActivitiesBridge.Helper.dll</HintPath>
+    <Reference Include="AM.ComposerActivitiesBridge.Helper, Version=1.3.18.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.ComposerActivitiesBridge.Helper.1.3.18\lib\net452\AM.ComposerActivitiesBridge.Helper.dll</HintPath>
     </Reference>
-    <Reference Include="AM.ComposerActivitiesBridge.Threading, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.ComposerActivitiesBridge.1.3.7\lib\net452\AM.ComposerActivitiesBridge.Threading.dll</HintPath>
+    <Reference Include="AM.ComposerActivitiesBridge.Threading, Version=1.3.18.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.ComposerActivitiesBridge.1.3.18\lib\net452\AM.ComposerActivitiesBridge.Threading.dll</HintPath>
     </Reference>
     <Reference Include="AM.Core.ActivityLogger, Version=2.0.2.19, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AM.Core.ActivityLogger.2.0.2.19\lib\net45\AM.Core.ActivityLogger.dll</HintPath>
