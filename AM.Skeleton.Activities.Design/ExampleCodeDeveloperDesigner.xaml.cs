@@ -1,5 +1,4 @@
-using AM.DefaultActivities.Design;
-using AM.Skeleton.Activities;
+using AM.DefaultActivities.Design.Attributes;
 
 namespace AM.Skeleton.Activities.Design.Generated
 {
