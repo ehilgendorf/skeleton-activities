@@ -1,8 +1,7 @@
 ﻿using System.Activities.Presentation.Metadata;
 using System.IO;
 using System.Reflection;
-
-using AM.Common.Activities.Design.Metadata;
+using AM.DefaultActivities.Design.Metadata;
 
 namespace AM.Skeleton.Activities.Design
 {

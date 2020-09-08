@@ -1,4 +1,4 @@
-using AM.DefaultActivities.Design.Attributes;
+using AM.DefaultActivities.Design;
 using AM.Skeleton.Activities.CustomEditor;
 
 namespace AM.Skeleton.Activities.Design.CustomEditor
