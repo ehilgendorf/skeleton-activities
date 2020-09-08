@@ -1,4 +1,4 @@
-using AM.DefaultActivities.Design;
+using AM.DefaultActivities.Design.Attributes;
 using AM.Skeleton.Activities.DatabaseExample;
 
 namespace AM.Skeleton.Activities.Design.DatabaseExample

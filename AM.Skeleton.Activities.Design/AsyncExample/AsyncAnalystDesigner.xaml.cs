@@ -1,5 +1,5 @@
-using AM.DefaultActivities.Design;
 using AM.Skeleton.Activities.AsyncExample;
+using AM.DefaultActivities.Design.Attributes;
 
 namespace AM.Skeleton.Activities.Design.AsyncExample
 {

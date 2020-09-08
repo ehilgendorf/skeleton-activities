@@ -31,10 +31,7 @@
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Text="File Path"
                                    ToolTip="{Binding ConverterParameter=FilePath, Converter={StaticResource PropertyDescriptionConverter}}" />
-                        <customControls:FilePathControl Grid.Row="0" Grid.Column="1" VerticalAlignment="Center"
-                                                        Expression="{Binding Path=ModelItem.FilePath, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }"
-                                                        PropertyName="FilePath" ModelItem="{Binding Path=ModelItem}"
-                                                        Title="Select a file" IsSaveDialog="false" />
+                        <customControls:PathControl Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" PathProperty="{Binding Path=ModelItem.FilePath, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" PropertyName="FilePath" ActivityModelItem="{Binding Path=ModelItem}" />
                     </Grid>
                 </activityWrappers:CodeActivityWrapper>
             </DataTemplate>
@@ -50,10 +47,7 @@
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Text="File Path"
                                    ToolTip="{Binding ConverterParameter=FilePath, Converter={StaticResource PropertyDescriptionConverter}}" />
-                        <customControls:FilePathControl Grid.Row="0" Grid.Column="1" VerticalAlignment="Center"
-                                                        Expression="{Binding Path=ModelItem.FilePath, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }"
-                                                        PropertyName="FilePath" ModelItem="{Binding Path=ModelItem}"
-                                                        Title="Select a file" IsSaveDialog="false" />
+                        <customControls:PathControl Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" PathProperty="{Binding Path=ModelItem.FilePath, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" PropertyName="FilePath" ActivityModelItem="{Binding Path=ModelItem}" />
                     </Grid>
                 </activityWrappers:CodeActivityWrapper>
             </DataTemplate>
