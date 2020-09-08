@@ -14,7 +14,7 @@ namespace AM.Skeleton.Activities.Design.CustomEditor
         public FileBrowserDialogEditor()
         {
             // Get the XAML DataTemplate for this control
-            InlineEditorTemplate = (DataTemplate) EditorResources.GetResources()["ExampleEditor"];
+            InlineEditorTemplate = (DataTemplate)EditorResources.GetResources()["ExampleEditor"];
         }
 
         /// <summary>
