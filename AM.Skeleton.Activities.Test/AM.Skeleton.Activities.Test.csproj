@@ -41,50 +41,59 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AM.Artefacts.Roles, Version=1.3.20.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.ComposerActivitiesBridge.1.3.20\lib\net452\AM.Artefacts.Roles.dll</HintPath>
+    <Reference Include="AM.Activities.Interfaces, Version=2.0.35.60277, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.Activities.Interfaces.2.0.35\lib\net452\AM.Activities.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="AM.Artefacts, Version=2.0.35.60277, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.ComposerActivitiesBridge.2.0.35\lib\net452\AM.Artefacts.dll</HintPath>
     </Reference>
     <Reference Include="AM.Common.Activities, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.Common.Activities.1.3.76\lib\net452\AM.Common.Activities.dll</HintPath>
+      <HintPath>..\packages\AM.Common.Activities.1.3.89\lib\net452\AM.Common.Activities.dll</HintPath>
     </Reference>
-    <Reference Include="AM.ComposerActivitiesBridge, Version=1.3.20.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.ComposerActivitiesBridge.1.3.20\lib\net452\AM.ComposerActivitiesBridge.dll</HintPath>
+    <Reference Include="AM.ComposerActivitiesBridge, Version=2.0.35.60277, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.ComposerActivitiesBridge.2.0.35\lib\net452\AM.ComposerActivitiesBridge.dll</HintPath>
     </Reference>
     <Reference Include="AM.ComposerActivitiesBridge.Helper, Version=1.3.20.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AM.ComposerActivitiesBridge.Helper.1.3.20\lib\net452\AM.ComposerActivitiesBridge.Helper.dll</HintPath>
     </Reference>
-    <Reference Include="AM.ComposerActivitiesBridge.Threading, Version=1.3.20.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.ComposerActivitiesBridge.1.3.20\lib\net452\AM.ComposerActivitiesBridge.Threading.dll</HintPath>
-    </Reference>
-    <Reference Include="AM.Core.ActivityLogger, Version=2.0.2.19, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.Core.ActivityLogger.2.0.2.19\lib\net45\AM.Core.ActivityLogger.dll</HintPath>
+    <Reference Include="AM.Core.ActivityLogger, Version=2.1.1.5174, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.Core.ActivityLogger.2.1.1\lib\net45\AM.Core.ActivityLogger.dll</HintPath>
     </Reference>
     <Reference Include="AM.Core.Crypt, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AM.Core.Crypt.1.0.3\lib\net45\AM.Core.Crypt.dll</HintPath>
     </Reference>
-    <Reference Include="AM.Core.Db.DataAccess, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.Core.Db.DataAccess.1.1.25\lib\net45\AM.Core.Db.DataAccess.dll</HintPath>
+    <Reference Include="AM.Core.Db.DataAccess, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.Core.Db.DataAccess.1.2.6\lib\net452\AM.Core.Db.DataAccess.dll</HintPath>
     </Reference>
-    <Reference Include="AM.Core.Db.DomainModelEntities, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.Core.Db.DataAccess.1.1.25\lib\net45\AM.Core.Db.DomainModelEntities.dll</HintPath>
+    <Reference Include="AM.Core.Db.DomainModelEntities, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.Core.Db.DataAccess.1.2.6\lib\net452\AM.Core.Db.DomainModelEntities.dll</HintPath>
     </Reference>
-    <Reference Include="AM.Core.Protocol.Writer, Version=1.2.1.26, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.Core.Protocol.Writer.1.2.1.26\lib\net45\AM.Core.Protocol.Writer.dll</HintPath>
+    <Reference Include="AM.Core.Protocol.Writer, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.Core.Protocol.Writer.1.3.17\lib\net45\AM.Core.Protocol.Writer.dll</HintPath>
     </Reference>
     <Reference Include="AM.DefaultActivities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.DefaultActivities.Design.1.0.55\lib\net452\AM.DefaultActivities.dll</HintPath>
+      <HintPath>..\packages\AM.DefaultActivities.Design.1.0.58\lib\net452\AM.DefaultActivities.dll</HintPath>
     </Reference>
     <Reference Include="AM.DefaultActivities.Design, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.DefaultActivities.Design.1.0.55\lib\net452\AM.DefaultActivities.Design.dll</HintPath>
+      <HintPath>..\packages\AM.DefaultActivities.Design.1.0.58\lib\net452\AM.DefaultActivities.Design.dll</HintPath>
     </Reference>
     <Reference Include="AM.DefaultActivities.Interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.DefaultActivities.Interfaces.1.0.55\lib\net452\AM.DefaultActivities.Interfaces.dll</HintPath>
+      <HintPath>..\packages\AM.DefaultActivities.Interfaces.1.0.58\lib\net452\AM.DefaultActivities.Interfaces.dll</HintPath>
     </Reference>
-    <Reference Include="AM.Localization, Version=0.6.5.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.Localization.0.6.5\lib\net452\AM.Localization.dll</HintPath>
+    <Reference Include="AM.Encryption, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.Encryption.1.2.5\lib\net452\AM.Encryption.dll</HintPath>
+    </Reference>
+    <Reference Include="AM.Localization, Version=0.7.11.32156, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.Localization.0.7.11\lib\net452\AM.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="AM.Localization.Interfaces, Version=0.7.11.32156, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.Localization.Interfaces.0.7.11\lib\net452\AM.Localization.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="AM.Logging, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.Logging.2.3.2\lib\net45\AM.Logging.dll</HintPath>
+      <HintPath>..\packages\AM.Logging.2.3.11\lib\net45\AM.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="AM.PluginAssembly, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AM.PluginAssembly.1.1.26\lib\net452\AM.PluginAssembly.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
@@ -178,6 +187,8 @@
     <Error Condition="!Exists('..\packages\NUnit3TestAdapter.3.16.1\build\net35\NUnit3TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit3TestAdapter.3.16.1\build\net35\NUnit3TestAdapter.props'))" />
     <Error Condition="!Exists('..\packages\Nerdbank.GitVersioning.3.2.31\build\Nerdbank.GitVersioning.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Nerdbank.GitVersioning.3.2.31\build\Nerdbank.GitVersioning.targets'))" />
     <Error Condition="!Exists('..\packages\AM.CodeRules.1.2.6\build\AM.CodeRules.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\AM.CodeRules.1.2.6\build\AM.CodeRules.props'))" />
+    <Error Condition="!Exists('..\packages\AM.PluginAssembly.1.1.26\Build\AM.PluginAssembly.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\AM.PluginAssembly.1.1.26\Build\AM.PluginAssembly.targets'))" />
   </Target>
   <Import Project="..\packages\Nerdbank.GitVersioning.3.2.31\build\Nerdbank.GitVersioning.targets" Condition="Exists('..\packages\Nerdbank.GitVersioning.3.2.31\build\Nerdbank.GitVersioning.targets')" />
+  <Import Project="..\packages\AM.PluginAssembly.1.1.26\Build\AM.PluginAssembly.targets" Condition="Exists('..\packages\AM.PluginAssembly.1.1.26\Build\AM.PluginAssembly.targets')" />
 </Project>
