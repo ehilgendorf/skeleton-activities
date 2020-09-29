@@ -1,11 +1,12 @@
 using AM.Common.Activities.BaseActivities;
-using AM.Common.Activities.Design.Editors;
 using System.Activities;
 using System.Activities.Presentation.PropertyEditing;
 using System.ComponentModel;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using AM.Common.Activities.Design.Editors;
 
 namespace AM.Skeleton.Activities.AsyncExample
 {
@@ -19,7 +20,7 @@ namespace AM.Skeleton.Activities.AsyncExample
         /// <summary>
         ///     Input Argument of the type sting to a file that will be processed asynchronously
         /// </summary>
-        [Editor(typeof(FileBrowserDialogEditor),
+        [Editor(typeof(FileBrowserDialogEditor<System.Windows.Forms.OpenFileDialog>),
             typeof(DialogPropertyValueEditor))] // InArguments can be displayed with a custom editor to add more functionality. In this case it will show a FileDialog
         public InArgument<string> FilePath { get; set; }
 
@@ -50,6 +51,7 @@ namespace AM.Skeleton.Activities.AsyncExample
         }
 
         /// <summary>
+        /// Asynchronously executes the body of an activity.
         /// </summary>
         /// <param name="context">The execution context for an asynchronous activity.</param>
         /// <param name="cancellationToken">Propagates notification that operations should be canceled.</param>
