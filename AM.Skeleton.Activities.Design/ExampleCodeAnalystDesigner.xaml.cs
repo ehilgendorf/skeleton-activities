@@ -1,4 +1,6 @@
-using AM.DefaultActivities.Design.Attributes;
+
+
+using AM.ComposerActivitiesBridge.Attributes;
 
 namespace AM.Skeleton.Activities.Design.Generated
 {

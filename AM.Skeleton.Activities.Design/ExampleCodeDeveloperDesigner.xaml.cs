@@ -1,6 +1,6 @@
-using AM.DefaultActivities.Design.Attributes;
+using AM.ComposerActivitiesBridge.Attributes;
 
-namespace AM.Skeleton.Activities.Design.Generated
+namespace AM.Skeleton.Activities.Design
 {
     [DeveloperDesigner(typeof(ExampleCodeActivity))]
     public partial class ExampleCodeDeveloperDesigner
