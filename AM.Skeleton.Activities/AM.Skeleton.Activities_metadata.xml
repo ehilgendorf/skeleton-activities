@@ -20,10 +20,10 @@
             </PropertiesMetadata>
         </ActivityMetadata>
         <ActivityMetadata ActivityType="AM.Skeleton.Activities.AsyncExample.AsyncWithResultActivity">
-            <DisplayName>Async Acitivity with Result</DisplayName>
-            <Description>Example of a Async Acitivity with Result</Description>
-            <Category>Async Acitivity</Category>
-            <SearchTags>Async Acitivity, Result</SearchTags>
+            <DisplayName>Async Activity with Result</DisplayName>
+            <Description>Example of a Async Activity with Result</Description>
+            <Category>Async Activity</Category>
+            <SearchTags>Async Activity, Result</SearchTags>
             <PropertiesMetadata />
         </ActivityMetadata>
         <ActivityMetadata ActivityType="AM.Skeleton.Activities.DatabaseExample.DatabaseExampleActivity">
