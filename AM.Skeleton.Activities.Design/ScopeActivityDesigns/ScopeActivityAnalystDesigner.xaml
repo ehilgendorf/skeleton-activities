@@ -7,7 +7,7 @@
         <ResourceDictionary x:Uid="ResourceDictionary_1">
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary
-                    Source="pack://application:,,/AM.Common.Activities.Design;component/StylingDictionaries/ActivityStyling.xaml" />
+                    Source="pack://application:,,/AM.Activities.Common.Design;component/StylingDictionaries/ActivityStyling.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </FrameworkElement.Resources>

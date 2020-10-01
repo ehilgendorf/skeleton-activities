@@ -1,8 +1,9 @@
 ﻿using System.Activities;
 using System.Activities.Presentation.PropertyEditing;
 using System.ComponentModel;
-using AM.Common.Activities.BaseActivities;
-using AM.Common.Activities.Design.Editors;
+using System.Windows.Forms;
+using AM.Activities.Common.BaseActivities;
+using AM.Activities.Common.Design.Editors;
 using AM.Skeleton.Application;
 
 namespace AM.Skeleton.Activities.CustomEditor
@@ -16,7 +17,7 @@ namespace AM.Skeleton.Activities.CustomEditor
         ///     InArguments can be displayed with a custom editor to add more functionality. In this case it will show a
         ///     FileDialog
         /// </summary>
-        [Editor(typeof(FileBrowserDialogEditor), typeof(DialogPropertyValueEditor))]
+        [Editor(typeof(FileBrowserDialogEditor<OpenFileDialog>), typeof(DialogPropertyValueEditor))]
         public InArgument<string> CustomEditor { get; set; }
 
         /// <summary>

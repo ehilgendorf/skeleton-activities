@@ -1,6 +1,6 @@
 using System.Activities;
-using AM.Common.Activities;
-using AM.Common.Activities.BaseActivities;
+using AM.Activities.Common;
+using AM.Activities.Common.BaseActivities;
 using AM.Skeleton.Application;
 
 namespace AM.Skeleton.Activities.ScopeExample

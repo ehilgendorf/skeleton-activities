@@ -2,7 +2,7 @@ using System.Activities;
 using System.Activities.Statements;
 using System.Threading;
 using System.Threading.Tasks;
-using AM.Common.Activities.BaseActivities;
+using AM.Activities.Common.BaseActivities;
 using AM.Skeleton.Application;
 
 namespace AM.Skeleton.Activities.ScopeExample

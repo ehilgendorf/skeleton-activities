@@ -1,5 +1,5 @@
 ﻿using System.Activities;
-using AM.Common.Activities.BaseActivities;
+using AM.Activities.Common.BaseActivities;
 
 namespace AM.Skeleton.Activities.ErrorMessageExample
 {

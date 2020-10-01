@@ -4,8 +4,10 @@ using System.ComponentModel;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
-using AM.Common.Activities.BaseActivities;
-using AM.Common.Activities.Design.Editors;
+using System.Windows.Forms;
+using AM.Activities.Common.BaseActivities;
+using AM.Activities.Common.Design.Editors;
+
 
 namespace AM.Skeleton.Activities.AsyncExample
 {
@@ -19,7 +21,7 @@ namespace AM.Skeleton.Activities.AsyncExample
         /// <summary>
         ///     Path to a file that will be processed asynchronously
         /// </summary>
-        [Editor(typeof(FileBrowserDialogEditor),
+        [Editor(typeof(FileBrowserDialogEditor<OpenFileDialog>),
             typeof(DialogPropertyValueEditor))] // InArguments can be displayed with a custom editor to add more functionality. In this case it will show a FileDialog
         public InArgument<string> FilePath { get; set; }
 

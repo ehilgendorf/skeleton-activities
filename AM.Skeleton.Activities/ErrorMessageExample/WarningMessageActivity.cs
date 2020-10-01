@@ -1,6 +1,6 @@
 ﻿using System.Activities;
 using System.Activities.Validation;
-using AM.Common.Activities.BaseActivities;
+using AM.Activities.Common.BaseActivities;
 
 namespace AM.Skeleton.Activities.ErrorMessageExample
 {

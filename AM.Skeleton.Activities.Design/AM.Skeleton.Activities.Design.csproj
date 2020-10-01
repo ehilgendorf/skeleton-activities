@@ -37,17 +37,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AM.Activities.Common.Design">
+      <HintPath>..\packages\AM.Activities.Common.Design.2.0.50\lib\net452\AM.Activities.Common.Design.dll</HintPath>
+    </Reference>
     <Reference Include="AM.Activities.Interfaces, Version=2.0.35.60277, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AM.Activities.Interfaces.2.0.35\lib\net452\AM.Activities.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="AM.Artefacts, Version=2.0.35.60277, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AM.ComposerActivitiesBridge.2.0.35\lib\net452\AM.Artefacts.dll</HintPath>
-    </Reference>
-    <Reference Include="AM.Common.Activities, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.Common.Activities.1.3.89\lib\net452\AM.Common.Activities.dll</HintPath>
-    </Reference>
-    <Reference Include="AM.Common.Activities.Design, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.Common.Activities.Design.1.3.89\lib\net452\AM.Common.Activities.Design.dll</HintPath>
     </Reference>
     <Reference Include="AM.ComposerActivitiesBridge, Version=2.0.35.60277, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AM.ComposerActivitiesBridge.2.0.35\lib\net452\AM.ComposerActivitiesBridge.dll</HintPath>
@@ -69,15 +66,6 @@
     </Reference>
     <Reference Include="AM.Core.Protocol.Writer, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AM.Core.Protocol.Writer.1.3.17\lib\net45\AM.Core.Protocol.Writer.dll</HintPath>
-    </Reference>
-    <Reference Include="AM.DefaultActivities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.DefaultActivities.Design.1.0.58\lib\net452\AM.DefaultActivities.dll</HintPath>
-    </Reference>
-    <Reference Include="AM.DefaultActivities.Design, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.DefaultActivities.Design.1.0.58\lib\net452\AM.DefaultActivities.Design.dll</HintPath>
-    </Reference>
-    <Reference Include="AM.DefaultActivities.Interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.DefaultActivities.Interfaces.1.0.58\lib\net452\AM.DefaultActivities.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="AM.Encryption, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AM.Encryption.1.2.5\lib\net452\AM.Encryption.dll</HintPath>
@@ -309,12 +297,10 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Nerdbank.GitVersioning.3.2.31\build\Nerdbank.GitVersioning.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Nerdbank.GitVersioning.3.2.31\build\Nerdbank.GitVersioning.targets'))" />
     <Error Condition="!Exists('..\packages\AM.CodeRules.1.2.6\build\AM.CodeRules.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\AM.CodeRules.1.2.6\build\AM.CodeRules.props'))" />
-    <Error Condition="!Exists('..\packages\AM.Common.Activities.Design.1.3.89\build\AM.Common.Activities.Design.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\AM.Common.Activities.Design.1.3.89\build\AM.Common.Activities.Design.targets'))" />
     <Error Condition="!Exists('..\packages\AM.Native.WindowsApi.2.0.17\build\AM.Native.WindowsApi.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\AM.Native.WindowsApi.2.0.17\build\AM.Native.WindowsApi.targets'))" />
     <Error Condition="!Exists('..\packages\AM.PluginAssembly.1.1.38\Build\AM.PluginAssembly.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\AM.PluginAssembly.1.1.38\Build\AM.PluginAssembly.targets'))" />
   </Target>
   <Import Project="..\packages\Nerdbank.GitVersioning.3.2.31\build\Nerdbank.GitVersioning.targets" Condition="Exists('..\packages\Nerdbank.GitVersioning.3.2.31\build\Nerdbank.GitVersioning.targets')" />
-  <Import Project="..\packages\AM.Common.Activities.Design.1.3.89\build\AM.Common.Activities.Design.targets" Condition="Exists('..\packages\AM.Common.Activities.Design.1.3.89\build\AM.Common.Activities.Design.targets')" />
   <Import Project="..\packages\AM.Native.WindowsApi.2.0.17\build\AM.Native.WindowsApi.targets" Condition="Exists('..\packages\AM.Native.WindowsApi.2.0.17\build\AM.Native.WindowsApi.targets')" />
   <Import Project="..\packages\AM.PluginAssembly.1.1.38\Build\AM.PluginAssembly.targets" Condition="Exists('..\packages\AM.PluginAssembly.1.1.38\Build\AM.PluginAssembly.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

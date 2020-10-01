@@ -1,10 +1,11 @@
-﻿using AM.Common.Activities.BaseActivities;
-using AM.Common.Activities.Design.Editors;
-using AM.DefaultActivities.Design.Attributes;
-using AM.Skeleton.Application;
-using System.Activities;
+﻿using System.Activities;
 using System.Activities.Presentation.PropertyEditing;
 using System.ComponentModel;
+using System.Windows.Forms;
+using AM.Activities.Common.BaseActivities;
+using AM.Activities.Common.Design.Editors;
+using AM.ComposerActivitiesBridge.Attributes;
+using AM.Skeleton.Application;
 
 namespace AM.Skeleton.Activities
 {
@@ -23,7 +24,7 @@ namespace AM.Skeleton.Activities
         /// <summary>
         ///     InArguments can be extended with a custom editor to add more functionality. In this case it will show a FileDialog
         /// </summary>
-        [Editor(typeof(FileBrowserDialogEditor), typeof(DialogPropertyValueEditor))]
+        [Editor(typeof(FileBrowserDialogEditor<OpenFileDialog>), typeof(DialogPropertyValueEditor))]
         public InArgument<string> CustomEditor { get; set; }
 
         /// <summary>

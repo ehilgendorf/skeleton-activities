@@ -1,6 +1,6 @@
 using System.Activities.Presentation;
 using System.Windows;
-using AM.Common.Activities.Design.DesignsInterfaces;
+using AM.Activities.Common.Design.DesignsInterfaces;
 using AM.ComposerActivitiesBridge.Attributes;
 using AM.Skeleton.Activities.ScopeExample;
 
