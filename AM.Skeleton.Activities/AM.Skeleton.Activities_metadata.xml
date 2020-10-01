@@ -63,10 +63,10 @@
             </PropertiesMetadata>
         </ActivityMetadata>
         <ActivityMetadata ActivityType="AM.Skeleton.Activities.AsyncExample.AsyncActivity">
-            <DisplayName>Async Acitivity</DisplayName>
-            <Description>Example of a Async Acitivity</Description>
-            <Category>Async Acitivity</Category>
-            <SearchTags>Async Acitivity</SearchTags>
+            <DisplayName>Async Activity</DisplayName>
+            <Description>Example of a Async Activity</Description>
+            <Category>Async Activity</Category>
+            <SearchTags>Async Activity</SearchTags>
             <PropertiesMetadata>
                 <PropertyMetadata PropertyName="FilePath" DisplayName="File Path" Description="Path to the file to be processed" RequiredArgument="false" Category="Input" VariableSelectionInputTextPopup="false" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="false" Order="0" />
             </PropertiesMetadata>
