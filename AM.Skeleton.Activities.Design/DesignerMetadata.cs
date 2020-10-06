@@ -14,6 +14,7 @@ namespace AM.Skeleton.Activities.Design
         {
             AttributeTableBuilder builder = new AttributeTableBuilder();
             LoadMetadata(builder);
+            MetadataStore.AddAttributeTable(builder.CreateTable());
         }
 
         /// <summary>
