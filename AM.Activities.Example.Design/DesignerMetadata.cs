@@ -1,4 +1,5 @@
-﻿using System.Activities.Presentation.Metadata;
+﻿using System;
+using System.Activities.Presentation.Metadata;
 using System.IO;
 using System.Reflection;
 using AM.Activities.Common.Design.Metadata;
@@ -23,8 +24,8 @@ namespace AM.Activities.Example.Design
         /// <param name="builder"><see cref="System.Activities.Presentation.Metadata.AttributeTableBuilder"/></param>
         private static void LoadMetadata(AttributeTableBuilder builder)
         {
-            string metadataFile = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) +
-                                  "\\AM.Activities.Example_metadata.xml";
+            string metadataFile = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) ?? throw new ArgumentNullException(),
+                                  "AM.Activities.Example_metadata.xml");
             Assembly activities = Assembly.GetAssembly(typeof(ExampleCodeActivity));
             BaseDesignerMetadata.LoadMetadata(builder, metadataFile, activities);
         }
