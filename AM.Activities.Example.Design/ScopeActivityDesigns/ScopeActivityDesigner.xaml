@@ -4,7 +4,7 @@
                       xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"
                       xmlns:sa="http://schemas.microsoft.com/netfx/2009/xaml/activities">
     <FrameworkElement.Resources>
-        <ResourceDictionary x:Uid="ResourceDictionary_1">
+        <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary
                     Source="pack://application:,,/AM.Activities.Common.Design;component/StylingDictionaries/ActivityStyling.xaml" />
@@ -19,10 +19,8 @@
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <sap:WorkflowItemPresenter x:Uid="sad:WorkflowItemPresenter_1" x:Name="WorkflowItemPresenter"
-                                   AutomationProperties.AutomationId="Activity" Margin="0,10,0,0" Grid.Row="1"
-                                   AllowedItemType="{x:Type sa:Activity}" HintText="Drop activity here"
-                                   DockPanel.Dock="Bottom"
+        <sap:WorkflowItemPresenter HintText="Drop activity here" Margin="0,10,0,0" Grid.Row="1"
+                                   AllowedItemType="{x:Type sa:Activity}"
                                    Item="{Binding Path=ModelItem.ContainerBody.Handler, Mode=TwoWay}" />
     </Grid>
 </sap:ActivityDesigner>

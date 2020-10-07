@@ -132,38 +132,20 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AsyncExample\AsyncAnalystDesigner.xaml.cs">
-      <DependentUpon>AsyncAnalystDesigner.xaml</DependentUpon>
-    </Compile>
     <Compile Include="AsyncExample\AsyncDeveloperDesigner.xaml.cs">
       <DependentUpon>AsyncDeveloperDesigner.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="AsyncExample\AsyncWithResultAnalystDesigner.xaml.cs">
-      <DependentUpon>AsyncWithResultAnalystDesigner.xaml</DependentUpon>
     </Compile>
     <Compile Include="AsyncExample\AsyncWithResultDeveloperDesigner.xaml.cs">
       <DependentUpon>AsyncWithResultDeveloperDesigner.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CustomEditor\CustomEditorCodeAnalystDesigner.xaml.cs">
-      <DependentUpon>CustomEditorCodeAnalystDesigner.xaml</DependentUpon>
-    </Compile>
     <Compile Include="CustomEditor\CustomEditorCodeDeveloperDesigner.xaml.cs">
       <DependentUpon>CustomEditorCodeDeveloperDesigner.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="DatabaseExample\DatabaseExampleAnalystDesigner.xaml.cs">
-      <DependentUpon>DatabaseExampleAnalystDesigner.xaml</DependentUpon>
     </Compile>
     <Compile Include="DatabaseExample\DatabaseExampleDeveloperDesigner.xaml.cs">
       <DependentUpon>DatabaseExampleDeveloperDesigner.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ErrorMessageExample\ErrorMessageAnalystDesigner.xaml.cs">
-      <DependentUpon>ErrorMessageAnalystDesigner.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ErrorMessageExample\ErrorMessageDeveloperDesigner.xaml.cs">
       <DependentUpon>ErrorMessageDeveloperDesigner.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ErrorMessageExample\WarningMessageAnalystDesigner.xaml.cs">
-      <DependentUpon>WarningMessageAnalystDesigner.xaml</DependentUpon>
     </Compile>
     <Compile Include="ErrorMessageExample\WarningMessageDeveloperDesigner.xaml.cs">
       <DependentUpon>WarningMessageDeveloperDesigner.xaml</DependentUpon>
@@ -174,46 +156,24 @@
     <Compile Include="ExampleCodeDeveloperDesigner.xaml.cs">
       <DependentUpon>ExampleCodeDeveloperDesigner.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ScopeActivityDesigns\ChildAnalystDesigner.xaml.cs">
-      <DependentUpon>ChildAnalystDesigner.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ScopeActivityDesigns\ChildDeveloperDesigner.xaml.cs">
       <DependentUpon>ChildDeveloperDesigner.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ScopeActivityDesigns\ScopeActivityAnalystDesigner.xaml.cs" />
-    <Page Include="AsyncExample\AsyncAnalystDesigner.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+    <Compile Include="ScopeActivityDesigns\ScopeActivityDesigner.cs" />
     <Page Include="AsyncExample\AsyncDeveloperDesigner.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AsyncExample\AsyncWithResultAnalystDesigner.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="AsyncExample\AsyncWithResultDeveloperDesigner.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="CustomEditor\CustomEditorCodeAnalystDesigner.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CustomEditor\CustomEditorCodeDeveloperDesigner.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DatabaseExample\DatabaseExampleAnalystDesigner.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="DatabaseExample\DatabaseExampleDeveloperDesigner.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ErrorMessageExample\ErrorMessageAnalystDesigner.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="ErrorMessageExample\ErrorMessageDeveloperDesigner.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ErrorMessageExample\WarningMessageAnalystDesigner.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ErrorMessageExample\WarningMessageDeveloperDesigner.xaml">
@@ -232,6 +192,10 @@
     <Compile Include="CustomEditor\Resources\EditorResources.xaml.cs">
       <DependentUpon>EditorResources.xaml</DependentUpon>
     </Compile>
+    <Page Include="ScopeActivityDesigns\ScopeActivityDesigner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DesignerMetadata.cs" />
@@ -274,15 +238,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="ScopeActivityDesigns\ChildAnalystDesigner.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="ScopeActivityDesigns\ChildDeveloperDesigner.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ScopeActivityDesigns\ScopeActivityAnalystDesigner.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\SecurityCodeScan.3.5.3.0\analyzers\dotnet\SecurityCodeScan.dll" />
