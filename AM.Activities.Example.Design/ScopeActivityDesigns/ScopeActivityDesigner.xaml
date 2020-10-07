@@ -19,7 +19,7 @@
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <sap:WorkflowItemPresenter HintText="Drop activity here" Margin="0,10,0,0" Grid.Row="1"
+        <sap:WorkflowItemPresenter x:Name="WorkflowItemPresenter" HintText="Drop activity here" Margin="0,10,0,0" Grid.Row="1"
                                    AllowedItemType="{x:Type sa:Activity}"
                                    Item="{Binding Path=ModelItem.ContainerBody.Handler, Mode=TwoWay}" />
     </Grid>
