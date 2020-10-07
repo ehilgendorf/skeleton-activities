@@ -1,4 +1,3 @@
-using AM.Logging;
 using System;
 using System.Activities;
 using System.ComponentModel;
@@ -8,8 +7,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using AM.Activities.Common.BaseActivities;
 using AM.ComposerActivitiesBridge.Attributes;
+using AM.Logging;
 
-namespace AM.Skeleton.Activities.DatabaseExample
+namespace AM.Activities.Example.DatabaseExample
 {
     /// <summary>
     ///     Example on how to interact with the SQL server from the Composer Environment Settings.

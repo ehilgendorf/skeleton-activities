@@ -4,10 +4,10 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using AM.Activities.Common.BaseActivities;
 using AM.Activities.Common.Design.Editors;
+using AM.Activities.Example.Application;
 using AM.ComposerActivitiesBridge.Attributes;
-using AM.Skeleton.Application;
 
-namespace AM.Skeleton.Activities
+namespace AM.Activities.Example
 {
     public sealed class ExampleCodeActivity : AbstractCodeActivity
     {
@@ -33,7 +33,7 @@ namespace AM.Skeleton.Activities
         public ExamplePropertyOptions Options { get; set; }
 
         /// <summary>
-        ///     Attributes can also be set loaded though xml files, see AM.Skeleton.Activities_metadata.xml for examples.
+        ///     Attributes can also be set loaded though xml files, see AM.Activities.Example_metadata.xml for examples.
         /// </summary>
         public OutArgument<string> Output { get; set; }
 

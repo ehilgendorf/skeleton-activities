@@ -1,4 +1,4 @@
-﻿namespace AM.Skeleton.Application
+﻿namespace AM.Activities.Example.Application
 {
     public interface IExampleApplication
     {

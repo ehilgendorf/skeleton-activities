@@ -1,6 +1,6 @@
 using System.Windows;
 
-namespace AM.Skeleton.Activities.Design.CustomEditor.Resources
+namespace AM.Activities.Example.Design.CustomEditor.Resources
 {
     /// <summary>
     ///     Example of a Custom Editor

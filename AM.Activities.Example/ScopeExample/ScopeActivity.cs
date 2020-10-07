@@ -3,9 +3,9 @@ using System.Activities.Statements;
 using System.Threading;
 using System.Threading.Tasks;
 using AM.Activities.Common.BaseActivities;
-using AM.Skeleton.Application;
+using AM.Activities.Example.Application;
 
-namespace AM.Skeleton.Activities.ScopeExample
+namespace AM.Activities.Example.ScopeExample
 {
     /// <summary>
     ///     Example of how to create a Scope activity that passes an object down to its children

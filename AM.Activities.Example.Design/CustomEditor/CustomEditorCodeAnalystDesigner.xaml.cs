@@ -1,8 +1,7 @@
-
+using AM.Activities.Example.CustomEditor;
 using AM.ComposerActivitiesBridge.Attributes;
-using AM.Skeleton.Activities.CustomEditor;
 
-namespace AM.Skeleton.Activities.Design.CustomEditor
+namespace AM.Activities.Example.Design.CustomEditor
 {
     [AnalystDesigner(
         typeof(CustomEditorCodeActivity))] // Indicates that this Design will be used for the Analyst view in the composer

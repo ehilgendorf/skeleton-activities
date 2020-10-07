@@ -1,7 +1,7 @@
+using AM.Activities.Example.ErrorMessageExample;
 using AM.ComposerActivitiesBridge.Attributes;
-using AM.Skeleton.Activities.ErrorMessageExample;
 
-namespace AM.Skeleton.Activities.Design.ErrorMessageExample
+namespace AM.Activities.Example.Design.ErrorMessageExample
 {
     [AnalystDesigner(
         typeof(WarningMessageActivity))] // Indicates that this Design will be used for the Analyst view in the composer

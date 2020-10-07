@@ -3,7 +3,7 @@ using System.IO;
 using System.Reflection;
 using AM.Activities.Common.Design.Metadata;
 
-namespace AM.Skeleton.Activities.Design
+namespace AM.Activities.Example.Design
 {
     /// <summary>
     ///     Types implementing IRegisterMetadata can be used to add custom metadata to activities at runtime.

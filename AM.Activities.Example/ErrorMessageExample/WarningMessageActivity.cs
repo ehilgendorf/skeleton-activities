@@ -2,7 +2,7 @@
 using System.Activities.Validation;
 using AM.Activities.Common.BaseActivities;
 
-namespace AM.Skeleton.Activities.ErrorMessageExample
+namespace AM.Activities.Example.ErrorMessageExample
 {
     /// <summary>
     ///     An example of how to create a custom warning message

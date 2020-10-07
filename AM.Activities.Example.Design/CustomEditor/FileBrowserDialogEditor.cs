@@ -1,9 +1,9 @@
 using System.Activities.Presentation.PropertyEditing;
 using System.Windows;
 using System.Windows.Forms;
-using AM.Skeleton.Activities.Design.CustomEditor.Resources;
+using AM.Activities.Example.Design.CustomEditor.Resources;
 
-namespace AM.Skeleton.Activities.Design.CustomEditor
+namespace AM.Activities.Example.Design.CustomEditor
 {
     /// <summary>
     ///     An example of how to create a custom editor that will be shown in the property panel.

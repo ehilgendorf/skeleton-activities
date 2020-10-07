@@ -2,7 +2,7 @@
 
 using AM.ComposerActivitiesBridge.Attributes;
 
-namespace AM.Skeleton.Activities.Design.Generated
+namespace AM.Activities.Example.Design
 {
     [AnalystDesigner(typeof(ExampleCodeActivity))]
     public partial class ExampleCodeAnalystDesigner

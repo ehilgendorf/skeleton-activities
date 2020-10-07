@@ -4,9 +4,9 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using AM.Activities.Common.BaseActivities;
 using AM.Activities.Common.Design.Editors;
-using AM.Skeleton.Application;
+using AM.Activities.Example.Application;
 
-namespace AM.Skeleton.Activities.CustomEditor
+namespace AM.Activities.Example.CustomEditor
 {
     /// <summary>
     ///     Example of how to create custom editors for arguments

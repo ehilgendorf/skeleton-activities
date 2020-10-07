@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using NUnit.Framework;
 
-namespace AM.Skeleton.Activities.Test
+namespace AM.Activities.Example.Test
 {
     [TestFixture]
     public class ExampleActivityTest

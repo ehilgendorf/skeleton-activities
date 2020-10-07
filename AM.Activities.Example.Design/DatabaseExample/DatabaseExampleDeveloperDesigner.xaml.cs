@@ -1,7 +1,7 @@
+using AM.Activities.Example.DatabaseExample;
 using AM.ComposerActivitiesBridge.Attributes;
-using AM.Skeleton.Activities.DatabaseExample;
 
-namespace AM.Skeleton.Activities.Design.DatabaseExample
+namespace AM.Activities.Example.Design.DatabaseExample
 {
     [DeveloperDesigner(
         typeof(DatabaseExampleActivity))] // Indicates that this Design will be used for the Developer view in the composer

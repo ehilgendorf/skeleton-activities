@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using AM.Activities.Common.BaseActivities;
 using AM.Activities.Common.Design.Editors;
 
-namespace AM.Skeleton.Activities.AsyncExample
+namespace AM.Activities.Example.AsyncExample
 {
     /// <summary>
     ///     Activity that runs a Task asynchronously, <see cref="AbstractTaskAsyncCodeActivity" /> handles delays,

@@ -1,9 +1,9 @@
 using System.Activities;
 using AM.Activities.Common;
 using AM.Activities.Common.BaseActivities;
-using AM.Skeleton.Application;
+using AM.Activities.Example.Application;
 
-namespace AM.Skeleton.Activities.ScopeExample
+namespace AM.Activities.Example.ScopeExample
 {
     /// <summary>
     ///     Child Activity that gets the ExampleApplication object from the parent

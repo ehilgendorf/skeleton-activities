@@ -1,10 +1,10 @@
 using System.Activities.Presentation;
 using System.Windows;
 using AM.Activities.Common.Design.DesignsInterfaces;
+using AM.Activities.Example.ScopeExample;
 using AM.ComposerActivitiesBridge.Attributes;
-using AM.Skeleton.Activities.ScopeExample;
 
-namespace AM.Skeleton.Activities.Design.ScopeActivityDesigns
+namespace AM.Activities.Example.Design.ScopeActivityDesigns
 {
     /// <summary>
     ///     Scope activity logic. Scope activities need to implement <see cref="IScopeNavigationIcon" />.
