@@ -24,7 +24,7 @@ namespace AM.Activities.Example.Design
         private static void LoadMetadata(AttributeTableBuilder builder)
         {
             string metadataFile = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) +
-                                  "\\AM.Skeleton.Activities_metadata.xml";
+                                  "\\AM.Activities.Example_metadata.xml";
             Assembly activities = Assembly.GetAssembly(typeof(ExampleCodeActivity));
             BaseDesignerMetadata.LoadMetadata(builder, metadataFile, activities);
         }
