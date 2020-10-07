@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\packages\AM.CodeRules.1.2.6\build\AM.CodeRules.props" Condition="Exists('..\..\packages\AM.CodeRules.1.2.6\build\AM.CodeRules.props')" />
+  <Import Project="..\..\packages\NUnit3TestAdapter.3.16.1\build\net35\NUnit3TestAdapter.props" Condition="Exists('..\..\packages\NUnit3TestAdapter.3.16.1\build\net35\NUnit3TestAdapter.props')" />
+  <Import Project="..\..\packages\NUnit.3.12.0\build\NUnit.props" Condition="Exists('..\..\packages\NUnit.3.12.0\build\NUnit.props')" />
   <Import Project="..\packages\AM.CodeRules.1.2.6\build\AM.CodeRules.props" Condition="Exists('..\packages\AM.CodeRules.1.2.6\build\AM.CodeRules.props')" />
   <Import Project="..\packages\NUnit3TestAdapter.3.16.1\build\net35\NUnit3TestAdapter.props" Condition="Exists('..\packages\NUnit3TestAdapter.3.16.1\build\net35\NUnit3TestAdapter.props')" />
   <Import Project="..\packages\NUnit.3.12.0\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.12.0\build\NUnit.props')" />
@@ -27,7 +30,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\testsOutput\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -42,83 +45,108 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AM.Activities.Common, Version=2.0.50.22581, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.Activities.Common.2.0.50\lib\net452\AM.Activities.Common.dll</HintPath>
+      <HintPath>..\..\packages\AM.Activities.Common.2.0.50\lib\net452\AM.Activities.Common.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="AM.Activities.Interfaces, Version=2.0.62.55063, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.Activities.Interfaces.2.0.62\lib\net452\AM.Activities.Interfaces.dll</HintPath>
+      <HintPath>..\..\packages\AM.Activities.Interfaces.2.0.62\lib\net452\AM.Activities.Interfaces.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="AM.Artefacts, Version=2.0.62.55063, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.ComposerActivitiesBridge.2.0.62\lib\net452\AM.Artefacts.dll</HintPath>
+      <HintPath>..\..\packages\AM.ComposerActivitiesBridge.2.0.62\lib\net452\AM.Artefacts.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="AM.ComposerActivitiesBridge, Version=2.0.62.55063, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.ComposerActivitiesBridge.2.0.62\lib\net452\AM.ComposerActivitiesBridge.dll</HintPath>
+      <HintPath>..\..\packages\AM.ComposerActivitiesBridge.2.0.62\lib\net452\AM.ComposerActivitiesBridge.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="AM.ComposerActivitiesBridge.Helper, Version=1.3.20.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.ComposerActivitiesBridge.Helper.1.3.20\lib\net452\AM.ComposerActivitiesBridge.Helper.dll</HintPath>
+      <HintPath>..\..\packages\AM.ComposerActivitiesBridge.Helper.1.3.20\lib\net452\AM.ComposerActivitiesBridge.Helper.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="AM.Core.ActivityLogger, Version=2.1.1.5174, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.Core.ActivityLogger.2.1.1\lib\net45\AM.Core.ActivityLogger.dll</HintPath>
+      <HintPath>..\..\packages\AM.Core.ActivityLogger.2.1.1\lib\net45\AM.Core.ActivityLogger.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="AM.Core.Crypt, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.Core.Crypt.1.0.3\lib\net45\AM.Core.Crypt.dll</HintPath>
+      <HintPath>..\..\packages\AM.Core.Crypt.1.0.3\lib\net45\AM.Core.Crypt.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="AM.Core.Db.DataAccess, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.Core.Db.DataAccess.1.2.6\lib\net452\AM.Core.Db.DataAccess.dll</HintPath>
+      <HintPath>..\..\packages\AM.Core.Db.DataAccess.1.2.6\lib\net452\AM.Core.Db.DataAccess.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="AM.Core.Db.DomainModelEntities, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.Core.Db.DataAccess.1.2.6\lib\net452\AM.Core.Db.DomainModelEntities.dll</HintPath>
+      <HintPath>..\..\packages\AM.Core.Db.DataAccess.1.2.6\lib\net452\AM.Core.Db.DomainModelEntities.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="AM.Core.Protocol.Writer, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.Core.Protocol.Writer.1.3.17\lib\net45\AM.Core.Protocol.Writer.dll</HintPath>
+      <HintPath>..\..\packages\AM.Core.Protocol.Writer.1.3.17\lib\net45\AM.Core.Protocol.Writer.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="AM.Encryption, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.Encryption.1.2.5\lib\net452\AM.Encryption.dll</HintPath>
+      <HintPath>..\..\packages\AM.Encryption.1.2.5\lib\net452\AM.Encryption.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="AM.ExternalResources, Version=1.0.31.31, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.ExternalResources.1.0.31.31\lib\net45\AM.ExternalResources.dll</HintPath>
+      <HintPath>..\..\packages\AM.ExternalResources.1.0.31.31\lib\net45\AM.ExternalResources.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="AM.Localization, Version=0.7.11.32156, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.Localization.0.7.11\lib\net452\AM.Localization.dll</HintPath>
+      <HintPath>..\..\packages\AM.Localization.0.7.11\lib\net452\AM.Localization.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="AM.Localization.Interfaces, Version=0.7.11.32156, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.Localization.Interfaces.0.7.11\lib\net452\AM.Localization.Interfaces.dll</HintPath>
+      <HintPath>..\..\packages\AM.Localization.Interfaces.0.7.11\lib\net452\AM.Localization.Interfaces.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="AM.Logging, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.Logging.2.3.11\lib\net45\AM.Logging.dll</HintPath>
+      <HintPath>..\..\packages\AM.Logging.2.3.11\lib\net45\AM.Logging.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="AM.PluginAssembly, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AM.PluginAssembly.1.1.38\lib\net452\AM.PluginAssembly.dll</HintPath>
+      <HintPath>..\..\packages\AM.PluginAssembly.1.1.38\lib\net452\AM.PluginAssembly.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="JetBrains.Annotations, Version=2019.1.3.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
-      <HintPath>..\packages\JetBrains.Annotations.2019.1.3\lib\net20\JetBrains.Annotations.dll</HintPath>
+      <HintPath>..\..\packages\JetBrains.Annotations.2019.1.3\lib\net20\JetBrains.Annotations.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <HintPath>..\..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Nito.AsyncEx, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Nito.AsyncEx.3.0.1\lib\net45\Nito.AsyncEx.dll</HintPath>
+      <HintPath>..\..\packages\Nito.AsyncEx.3.0.1\lib\net45\Nito.AsyncEx.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Nito.AsyncEx.Concurrent, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Nito.AsyncEx.3.0.1\lib\net45\Nito.AsyncEx.Concurrent.dll</HintPath>
+      <HintPath>..\..\packages\Nito.AsyncEx.3.0.1\lib\net45\Nito.AsyncEx.Concurrent.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Nito.AsyncEx.Enlightenment, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Nito.AsyncEx.3.0.1\lib\net45\Nito.AsyncEx.Enlightenment.dll</HintPath>
+      <HintPath>..\..\packages\Nito.AsyncEx.3.0.1\lib\net45\Nito.AsyncEx.Enlightenment.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="nunit.framework, Version=3.12.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.3.12.0\lib\net45\nunit.framework.dll</HintPath>
+      <HintPath>..\..\packages\NUnit.3.12.0\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Activities" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+      <HintPath>..\..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -132,16 +160,20 @@
     <None Include="version.json" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AM.Activities.Example\AM.Activities.Example.csproj">
+    <ProjectReference Include="..\..\src\AM.Activities.Example\AM.Activities.Example.csproj">
       <Project>{2eb1529c-04cb-4820-bc4e-7296da688480}</Project>
       <Name>AM.Activities.Example</Name>
     </ProjectReference>
-    <ProjectReference Include="..\AM.Activities.Example.Application\AM.Activities.Example.Application.csproj">
+    <ProjectReference Include="..\..\src\AM.Activities.Example.Application\AM.Activities.Example.Application.csproj">
       <Project>{9c9117b4-64d7-45fd-a967-8f6deeb894cd}</Project>
       <Name>AM.Activities.Example.Application</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Analyzer Include="..\..\packages\SecurityCodeScan.3.5.3.0\analyzers\dotnet\SecurityCodeScan.dll" />
+    <Analyzer Include="..\..\packages\SecurityCodeScan.3.5.3.0\analyzers\dotnet\YamlDotNet.dll" />
+    <Analyzer Include="..\..\packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
+    <Analyzer Include="..\..\packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
     <Analyzer Include="..\packages\SecurityCodeScan.3.5.3.0\analyzers\dotnet\SecurityCodeScan.dll" />
     <Analyzer Include="..\packages\SecurityCodeScan.3.5.3.0\analyzers\dotnet\YamlDotNet.dll" />
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
@@ -158,7 +190,14 @@
     <Error Condition="!Exists('..\packages\NUnit3TestAdapter.3.16.1\build\net35\NUnit3TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit3TestAdapter.3.16.1\build\net35\NUnit3TestAdapter.props'))" />
     <Error Condition="!Exists('..\packages\AM.CodeRules.1.2.6\build\AM.CodeRules.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\AM.CodeRules.1.2.6\build\AM.CodeRules.props'))" />
     <Error Condition="!Exists('..\packages\AM.PluginAssembly.1.1.38\Build\AM.PluginAssembly.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\AM.PluginAssembly.1.1.38\Build\AM.PluginAssembly.targets'))" />
+    <Error Condition="!Exists('..\..\packages\AM.PluginAssembly.1.1.38\build\AM.PluginAssembly.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\AM.PluginAssembly.1.1.38\build\AM.PluginAssembly.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Nerdbank.GitVersioning.3.2.31\build\Nerdbank.GitVersioning.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Nerdbank.GitVersioning.3.2.31\build\Nerdbank.GitVersioning.targets'))" />
+    <Error Condition="!Exists('..\..\packages\NUnit.3.12.0\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\NUnit.3.12.0\build\NUnit.props'))" />
+    <Error Condition="!Exists('..\..\packages\NUnit3TestAdapter.3.16.1\build\net35\NUnit3TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\NUnit3TestAdapter.3.16.1\build\net35\NUnit3TestAdapter.props'))" />
+    <Error Condition="!Exists('..\..\packages\AM.CodeRules.1.2.6\build\AM.CodeRules.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\AM.CodeRules.1.2.6\build\AM.CodeRules.props'))" />
   </Target>
   <Import Project="..\packages\Nerdbank.GitVersioning.3.2.31\build\Nerdbank.GitVersioning.targets" Condition="Exists('..\packages\Nerdbank.GitVersioning.3.2.31\build\Nerdbank.GitVersioning.targets')" />
   <Import Project="..\packages\AM.PluginAssembly.1.1.38\Build\AM.PluginAssembly.targets" Condition="Exists('..\packages\AM.PluginAssembly.1.1.38\Build\AM.PluginAssembly.targets')" />
+  <Import Project="..\..\packages\AM.PluginAssembly.1.1.38\build\AM.PluginAssembly.targets" Condition="Exists('..\..\packages\AM.PluginAssembly.1.1.38\build\AM.PluginAssembly.targets')" />
+  <Import Project="..\..\packages\Nerdbank.GitVersioning.3.2.31\build\Nerdbank.GitVersioning.targets" Condition="Exists('..\..\packages\Nerdbank.GitVersioning.3.2.31\build\Nerdbank.GitVersioning.targets')" />
 </Project>

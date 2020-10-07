@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AM.Activities.Example", "AM.Activities.Example\AM.Activities.Example.csproj", "{2EB1529C-04CB-4820-BC4E-7296DA688480}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AM.Activities.Example", "src\AM.Activities.Example\AM.Activities.Example.csproj", "{2EB1529C-04CB-4820-BC4E-7296DA688480}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AM.Activities.Example.Design", "AM.Activities.Example.Design\AM.Activities.Example.Design.csproj", "{92AE88EE-258B-4EBD-BCDF-84775C02DB27}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AM.Activities.Example.Design", "src\AM.Activities.Example.Design\AM.Activities.Example.Design.csproj", "{92AE88EE-258B-4EBD-BCDF-84775C02DB27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AM.Activities.Example.Test", "AM.Activities.Example.Test\AM.Activities.Example.Test.csproj", "{065F8904-2301-4026-A3B4-08AD1B5B0FBF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AM.Activities.Example.Test", "tests\AM.Activities.Example.Test\AM.Activities.Example.Test.csproj", "{065F8904-2301-4026-A3B4-08AD1B5B0FBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AM.Activities.Example.Application", "AM.Activities.Example.Application\AM.Activities.Example.Application.csproj", "{9C9117B4-64D7-45FD-A967-8F6DEEB894CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AM.Activities.Example.Application", "src\AM.Activities.Example.Application\AM.Activities.Example.Application.csproj", "{9C9117B4-64D7-45FD-A967-8F6DEEB894CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
