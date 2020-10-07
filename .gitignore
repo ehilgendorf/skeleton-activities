@@ -262,3 +262,5 @@ __pycache__/
 
 # Ignore Output Folder
 SkeletonActivity/
+build/
+testsOutput/
