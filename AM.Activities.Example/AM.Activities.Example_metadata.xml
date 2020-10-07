@@ -1,6 +1,6 @@
 <ProjectMetadata>
     <Metadata>
-        <ActivityMetadata ActivityType="AM.Skeleton.Activities.ErrorMessageExample.WarningMessageActivity">
+        <ActivityMetadata ActivityType="AM.Activities.Example.ErrorMessageExample.WarningMessageActivity">
             <DisplayName>Warning Message</DisplayName>
             <Description>Example of how to create a Error Message</Description>
             <Category>Error and Warning</Category>
@@ -10,14 +10,14 @@
                 <PropertyMetadata PropertyName="Output" DisplayName="Output" RequiredArgument="false" VariableSelectionInputTextPopup="false" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="false" Order="0" />
             </PropertiesMetadata>
         </ActivityMetadata>
-        <ActivityMetadata ActivityType="AM.Skeleton.Activities.AsyncExample.AsyncWithResultActivity">
+        <ActivityMetadata ActivityType="AM.Activities.Example.AsyncExample.AsyncWithResultActivity">
             <DisplayName>Async Activity with Result</DisplayName>
             <Description>Example of a Async Activity with Result</Description>
             <Category>Async Activity</Category>
             <SearchTags>Async Activity, Result</SearchTags>
             <PropertiesMetadata />
         </ActivityMetadata>
-        <ActivityMetadata ActivityType="AM.Skeleton.Activities.DatabaseExample.DatabaseExampleActivity">
+        <ActivityMetadata ActivityType="AM.Activities.Example.DatabaseExample.DatabaseExampleActivity">
             <DisplayName>Database</DisplayName>
             <Description>Database Example</Description>
             <Category>Database</Category>
@@ -27,13 +27,13 @@
                 <PropertyMetadata PropertyName="ResultTable" DisplayName="Result" Description="Query Result" RequiredArgument="false" Category="Output" VariableSelectionInputTextPopup="false" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="false" Order="0" />
             </PropertiesMetadata>
         </ActivityMetadata>
-        <ActivityMetadata ActivityType="AM.Skeleton.Activities.CustomEditor.CustomEditorCodeActivity">
+        <ActivityMetadata ActivityType="AM.Activities.Example.CustomEditor.CustomEditorCodeActivity">
             <DisplayName>Custom Editor</DisplayName>
             <Description>Example of a Custom Editor</Description>
             <Category>Custom Editor</Category>
             <PropertiesMetadata />
         </ActivityMetadata>
-        <ActivityMetadata ActivityType="AM.Skeleton.Activities.ExampleCodeActivity">
+        <ActivityMetadata ActivityType="AM.Activities.Example.ExampleCodeActivity">
             <DisplayName>Code Activity</DisplayName>
             <Description>Example of a Code Activity</Description>
             <Category>Code Activity</Category>
@@ -43,7 +43,7 @@
                 <PropertyMetadata PropertyName="Output" DisplayName="Output" RequiredArgument="false" Category="Output" VariableSelectionInputTextPopup="false" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="true" Order="0" />
             </PropertiesMetadata>
         </ActivityMetadata>
-        <ActivityMetadata ActivityType="AM.Skeleton.Activities.ErrorMessageExample.ErrorMessageActivity">
+        <ActivityMetadata ActivityType="AM.Activities.Example.ErrorMessageExample.ErrorMessageActivity">
             <DisplayName>Error Message</DisplayName>
             <Description>Example of how to create a Error Message</Description>
             <Category>Error and Warning</Category>
@@ -53,7 +53,7 @@
                 <PropertyMetadata PropertyName="Output" DisplayName="Output" Description="Output Value" RequiredArgument="false" Category="Output" VariableSelectionInputTextPopup="false" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="true" Order="0" />
             </PropertiesMetadata>
         </ActivityMetadata>
-        <ActivityMetadata ActivityType="AM.Skeleton.Activities.AsyncExample.AsyncActivity">
+        <ActivityMetadata ActivityType="AM.Activities.Example.AsyncExample.AsyncActivity">
             <DisplayName>Async Activity</DisplayName>
             <Description>Example of a Async Activity</Description>
             <Category>Async Activity</Category>
@@ -62,7 +62,7 @@
                 <PropertyMetadata PropertyName="FilePath" DisplayName="File Path" Description="Path to the file to be processed" RequiredArgument="false" Category="Input" VariableSelectionInputTextPopup="false" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="false" Order="0" />
             </PropertiesMetadata>
         </ActivityMetadata>
-        <ActivityMetadata ActivityType="AM.Skeleton.Activities.ScopeExample.ChildActivity">
+        <ActivityMetadata ActivityType="AM.Activities.Example.ScopeExample.ChildActivity">
             <DisplayName>Scope Child</DisplayName>
             <Description>Example of a Child for a specific scope</Description>
             <Category>Scope</Category>
@@ -70,7 +70,7 @@
                 <PropertyMetadata PropertyName="Option" DisplayName="Option" RequiredArgument="false" VariableSelectionInputTextPopup="false" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="false" Order="0" />
             </PropertiesMetadata>
         </ActivityMetadata>
-        <ActivityMetadata ActivityType="AM.Skeleton.Activities.ScopeExample.ScopeActivity">
+        <ActivityMetadata ActivityType="AM.Activities.Example.ScopeExample.ScopeActivity">
             <DisplayName>Scope Activity</DisplayName>
             <Description>Example of a Scope activity</Description>
             <Category>Scope</Category>

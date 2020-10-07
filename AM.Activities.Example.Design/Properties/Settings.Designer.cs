@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AM.Skeleton.Activities.Design.Properties {
+namespace AM.Activities.Example.Design.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
