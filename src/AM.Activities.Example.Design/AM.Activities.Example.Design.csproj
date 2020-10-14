@@ -194,9 +194,6 @@
     <Compile Include="ErrorMessageExample\WarningMessageDeveloperDesigner.xaml.cs">
       <DependentUpon>WarningMessageDeveloperDesigner.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ExampleCodeAnalystDesigner.xaml.cs">
-      <DependentUpon>ExampleCodeAnalystDesigner.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ExampleCodeDeveloperDesigner.xaml.cs">
       <DependentUpon>ExampleCodeDeveloperDesigner.xaml</DependentUpon>
     </Compile>
@@ -221,10 +218,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ErrorMessageExample\WarningMessageDeveloperDesigner.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ExampleCodeAnalystDesigner.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ExampleCodeDeveloperDesigner.xaml">
