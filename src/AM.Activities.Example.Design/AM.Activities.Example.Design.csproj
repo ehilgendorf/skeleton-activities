@@ -224,13 +224,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="CustomEditor\EditorTemplates.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Compile Include="CustomEditor\FileBrowserDialogEditor.cs" />
-    <Compile Include="CustomEditor\EditorTemplates.xaml.cs">
-      <DependentUpon>EditorTemplates.xaml</DependentUpon>
-    </Compile>
     <Page Include="ScopeActivityDesigns\ScopeActivityDesigner.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
