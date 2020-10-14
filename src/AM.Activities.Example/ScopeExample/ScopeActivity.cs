@@ -14,23 +14,15 @@ namespace AM.Activities.Example.ScopeExample
     {
         public ScopeActivity()
         {
-            // Declares a ActivityAction with the name from ScopeContextItemName, this allows child activities to get te context object from this activity.
-            ActivityAction<object> action = new ActivityAction<object>
+            // An ActivityAction is defined as body of the scope. This allows the ScopeActivity to propagate a context object to child activities.
+            ContainerBody = new ActivityAction<object>
             {
-                Argument = new DelegateInArgument<object>(ScopeContextItemName)
+                Argument = new DelegateInArgument<object>(ScopeContextItemName),
+                Handler = new Flowchart()
+                {
+                    DisplayName = "Do"
+                }
             };
-
-            // Creates a new Flowchart with the name Do.
-            Flowchart flowchart = new Flowchart
-            {
-                DisplayName = "Do"
-            };
-
-            // Adds the Flowchart to the action. 
-            action.Handler = flowchart;
-
-            // As container we use the Action with the Flowchart. This allows children to get access to the OutArgument of this activity
-            ContainerBody = action;
         }
 
         /// <summary>
