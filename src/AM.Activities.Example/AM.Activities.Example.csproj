@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\..\packages\AM.CodeRules.1.2.6\build\AM.CodeRules.props" Condition="Exists('..\..\packages\AM.CodeRules.1.2.6\build\AM.CodeRules.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -204,7 +203,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="version.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AM.Activities.Example_metadata.xml">
@@ -214,8 +212,6 @@
   <ItemGroup>
     <Analyzer Include="..\..\packages\SecurityCodeScan.3.5.3.0\analyzers\dotnet\SecurityCodeScan.dll" />
     <Analyzer Include="..\..\packages\SecurityCodeScan.3.5.3.0\analyzers\dotnet\YamlDotNet.dll" />
-    <Analyzer Include="..\..\packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
-    <Analyzer Include="..\..\packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
     <Analyzer Include="..\..\packages\SecurityCodeScan.3.5.3.0\analyzers\dotnet\SecurityCodeScan.dll" />
     <Analyzer Include="..\..\packages\SecurityCodeScan.3.5.3.0\analyzers\dotnet\YamlDotNet.dll" />
     <Analyzer Include="..\..\packages\StyleCop.Analyzers.1.1.118\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
@@ -230,8 +226,6 @@
     <Error Condition="!Exists('..\..\packages\AM.PluginAssembly.1.1.38\Build\AM.PluginAssembly.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\AM.PluginAssembly.1.1.38\Build\AM.PluginAssembly.targets'))" />
     <Error Condition="!Exists('..\..\packages\AM.Activities.Common.Design.2.0.50\build\AM.Activities.Common.Design.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\AM.Activities.Common.Design.2.0.50\build\AM.Activities.Common.Design.targets'))" />
     <Error Condition="!Exists('..\..\packages\AM.PluginAssembly.1.1.38\build\AM.PluginAssembly.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\AM.PluginAssembly.1.1.38\build\AM.PluginAssembly.targets'))" />
-    <Error Condition="!Exists('..\..\packages\Nerdbank.GitVersioning.3.2.31\build\Nerdbank.GitVersioning.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Nerdbank.GitVersioning.3.2.31\build\Nerdbank.GitVersioning.targets'))" />
-    <Error Condition="!Exists('..\..\packages\AM.CodeRules.1.2.6\build\AM.CodeRules.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\AM.CodeRules.1.2.6\build\AM.CodeRules.props'))" />
     <Error Condition="!Exists('..\..\packages\AM.Activities.Common.Design.2.0.50\build\AM.Activities.Common.Design.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\AM.Activities.Common.Design.2.0.50\build\AM.Activities.Common.Design.targets'))" />
     <Error Condition="!Exists('..\..\packages\AM.Native.WindowsApi.2.0.17\build\AM.Native.WindowsApi.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\AM.Native.WindowsApi.2.0.17\build\AM.Native.WindowsApi.targets'))" />
   </Target>
@@ -239,7 +233,6 @@
   <Import Project="..\..\packages\AM.PluginAssembly.1.1.38\Build\AM.PluginAssembly.targets" Condition="Exists('..\..\packages\AM.PluginAssembly.1.1.38\Build\AM.PluginAssembly.targets')" />
   <Import Project="..\..\packages\AM.Activities.Common.Design.2.0.50\build\AM.Activities.Common.Design.targets" Condition="Exists('..\..\packages\AM.Activities.Common.Design.2.0.50\build\AM.Activities.Common.Design.targets')" />
   <Import Project="..\..\packages\AM.PluginAssembly.1.1.38\build\AM.PluginAssembly.targets" Condition="Exists('..\..\packages\AM.PluginAssembly.1.1.38\build\AM.PluginAssembly.targets')" />
-  <Import Project="..\..\packages\Nerdbank.GitVersioning.3.2.31\build\Nerdbank.GitVersioning.targets" Condition="Exists('..\..\packages\Nerdbank.GitVersioning.3.2.31\build\Nerdbank.GitVersioning.targets')" />
   <Import Project="..\..\packages\AM.Activities.Common.Design.2.0.50\build\AM.Activities.Common.Design.targets" Condition="Exists('..\..\packages\AM.Activities.Common.Design.2.0.50\build\AM.Activities.Common.Design.targets')" />
   <Import Project="..\..\packages\AM.Native.WindowsApi.2.0.17\build\AM.Native.WindowsApi.targets" Condition="Exists('..\..\packages\AM.Native.WindowsApi.2.0.17\build\AM.Native.WindowsApi.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
