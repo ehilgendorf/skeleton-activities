@@ -1,7 +1,6 @@
 using System.Activities.Presentation.PropertyEditing;
 using System.Windows;
 using System.Windows.Forms;
-using AM.Activities.Example.Design.CustomEditor.Resources;
 
 namespace AM.Activities.Example.Design.CustomEditor
 {
@@ -14,7 +13,7 @@ namespace AM.Activities.Example.Design.CustomEditor
         public FileBrowserDialogEditor()
         {
             // Get the XAML DataTemplate for this control
-            InlineEditorTemplate = (DataTemplate)EditorResources.GetResources()["ExampleEditor"];
+            InlineEditorTemplate = EditorTemplates.FileBrowserDialogEditor;
         }
 
         /// <summary>
@@ -30,9 +29,7 @@ namespace AM.Activities.Example.Design.CustomEditor
         {
             // Instead of a Open File dialog you can start a custom window
             OpenFileDialog browse = new OpenFileDialog();
-
             if (browse.ShowDialog() == DialogResult.OK) propertyValue.StringValue = browse.FileName;
-
             browse.Dispose();
         }
     }

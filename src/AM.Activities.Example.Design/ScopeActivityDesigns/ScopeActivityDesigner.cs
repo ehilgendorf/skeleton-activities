@@ -10,7 +10,7 @@ namespace AM.Activities.Example.Design.ScopeActivityDesigns
     ///     Scope activity logic. Scope activities need to implement <see cref="IScopeNavigationIcon" />.
     /// </summary>
     [DeveloperDesigner(
-        typeof(ScopeActivity))] // Indicates that this Design will be used for the Analyst view in the composer
+        typeof(ScopeActivity))] // Indicates that this Design will be used for the ScopeActivity in the composer
     public partial class ScopeActivityDesigner : IScopeNavigationIcon
     {
         private bool _onlyOnFirstLoad;
