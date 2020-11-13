@@ -29,9 +29,9 @@
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Text="Option"
                                    ToolTip="{Binding ConverterParameter=Option, Converter={StaticResource PropertyDescriptionConverter}}" />
-                        <sapv:ExpressionTextBox Grid.Row="0" Grid.Column="1" VerticalAlignment="Center"
+                        <sapv:ExpressionTextBox Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HintText="{Binding ModelItem.Properties[Option].PropertyType.GenericTypeArguments[0]}"
                                                 Expression="{Binding Path=ModelItem.Option, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=Out }"
-                                                UseLocationExpression="true" OwnerActivity="{Binding Path=ModelItem}" />
+                                                UseLocationExpression="true" OwnerActivity="{Binding Path=ModelItem}" ExpressionType="{Binding ModelItem.Properties[Option].PropertyType.GenericTypeArguments[0]}"/>
                     </Grid>
                 </am:CodeActivityWrapper>
             </DataTemplate>
@@ -47,9 +47,9 @@
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Text="Option"
                                    ToolTip="{Binding ConverterParameter=Option, Converter={StaticResource PropertyDescriptionConverter}}" />
-                        <sapv:ExpressionTextBox Grid.Row="0" Grid.Column="1" VerticalAlignment="Center"
+                        <sapv:ExpressionTextBox Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HintText="{Binding ModelItem.Properties[Option].PropertyType.GenericTypeArguments[0]}"
                                                 Expression="{Binding Path=ModelItem.Option, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=Out }"
-                                                UseLocationExpression="true" OwnerActivity="{Binding Path=ModelItem}" />
+                                                UseLocationExpression="true" OwnerActivity="{Binding Path=ModelItem}" ExpressionType="{Binding ModelItem.Properties[Option].PropertyType.GenericTypeArguments[0]}"/>
                     </Grid>
                 </am:CodeActivityWrapper>
             </DataTemplate>
