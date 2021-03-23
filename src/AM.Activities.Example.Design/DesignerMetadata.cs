@@ -2,6 +2,8 @@
 using System.Activities.Presentation.Metadata;
 using System.IO;
 using System.Reflection;
+
+using AM.Activities.Common.Design.Helpers;
 using AM.Activities.Common.Design.Metadata;
 
 namespace AM.Activities.Example.Design
@@ -14,8 +16,17 @@ namespace AM.Activities.Example.Design
         public void Register()
         {
             AttributeTableBuilder builder = new AttributeTableBuilder();
+            AddActivityIcons(builder);
             LoadMetadata(builder);
             MetadataStore.AddAttributeTable(builder.CreateTable());
+        }
+
+        private static void AddActivityIcons(AttributeTableBuilder builder)
+        {
+            Assembly assembly = Assembly.GetAssembly(typeof(ExampleCodeActivity));
+            string assemblyFolder = Path.GetDirectoryName(assembly.Location);
+            string iconsFolderPath = Path.Combine(assemblyFolder, "Icons");
+            MetadataLoading.LoadActivityIcons(builder, assembly.GetName().Name, iconsFolderPath);
         }
 
         /// <summary>
