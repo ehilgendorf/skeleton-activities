@@ -1,8 +1,8 @@
-﻿<sap:ActivityDesigner x:Class="AM.Activities.Example.Design.ScopeActivityDesigns.ScopeActivityDesigner"
+<sap:ActivityDesigner x:Class="AM.Activities.Example.Design.ScopeActivityDesigns.ScopeActivityDesigner"
                       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                       xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"
-                      xmlns:sa="http://schemas.microsoft.com/netfx/2009/xaml/activities">
+                      xmlns:sa="http://schemas.microsoft.com/netfx/2009/xaml/activities" Icon="{DynamicResource ActivityIcon}">
     <FrameworkElement.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
