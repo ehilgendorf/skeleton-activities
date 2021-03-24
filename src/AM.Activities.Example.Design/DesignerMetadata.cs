@@ -23,7 +23,7 @@ namespace AM.Activities.Example.Design
 
         private static void AddActivityIcons(AttributeTableBuilder builder)
         {
-            Assembly assembly = Assembly.GetAssembly(typeof(ExampleCodeActivity));
+            Assembly assembly = typeof(ExampleCodeActivity).Assembly;
             string assemblyFolder = Path.GetDirectoryName(assembly.Location);
             string iconsFolderPath = Path.Combine(assemblyFolder, "Icons");
             MetadataLoading.LoadActivityIcons(builder, assembly.GetName().Name, iconsFolderPath);
