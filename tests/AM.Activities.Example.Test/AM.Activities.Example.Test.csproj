@@ -130,10 +130,6 @@
       <Project>{2eb1529c-04cb-4820-bc4e-7296da688480}</Project>
       <Name>AM.Activities.Example</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\AM.Activities.Example.Application\AM.Activities.Example.Application.csproj">
-      <Project>{9c9117b4-64d7-45fd-a967-8f6deeb894cd}</Project>
-      <Name>AM.Activities.Example.Application</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -160,6 +160,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application\ExampleApplication.cs" />
+    <Compile Include="Application\ExamplePropertyOptions.cs" />
+    <Compile Include="Application\IExampleApplication.cs" />
     <Compile Include="AsyncExample\AsyncActivity.cs" />
     <Compile Include="AsyncExample\AsyncWithResultActivity.cs" />
     <Compile Include="CustomEditor\CustomEditorCodeActivity.cs" />
@@ -172,12 +175,6 @@
     <Compile Include="ScopeExample\ScopeActivity.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AM.Activities.Example.Application\AM.Activities.Example.Application.csproj">
-      <Project>{9c9117b4-64d7-45fd-a967-8f6deeb894cd}</Project>
-      <Name>AM.Activities.Example.Application</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
@@ -186,6 +183,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\..\packages\AM.PluginAssembly.1.1.48\Build\AM.PluginAssembly.targets" Condition="Exists('..\..\packages\AM.PluginAssembly.1.1.48\Build\AM.PluginAssembly.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
