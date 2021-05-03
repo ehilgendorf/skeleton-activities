@@ -35,8 +35,7 @@ namespace AM.Activities.Example.ScopeExample
 
             if (exampleApplication != null)
             {
-                ExamplePropertyOptions option = exampleApplication.GetOption();
-                Option.Set(context, option.ToString());
+                Option.Set(context, exampleApplication.Option.ToString());
             }
         }
     }

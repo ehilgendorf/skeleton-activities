@@ -41,7 +41,7 @@ namespace AM.Activities.Example.ScopeExample
 
             return Task.Factory.StartNew(() =>
             {
-                application.SetOption(ExamplePropertyOptions.Option1);
+                application.Option = ExamplePropertyOptions.Option1;
 
                 return (object)application;
             }, token);

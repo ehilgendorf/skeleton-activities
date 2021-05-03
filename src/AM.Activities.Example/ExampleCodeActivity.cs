@@ -52,7 +52,7 @@ namespace AM.Activities.Example
             IExampleApplication exampleApplication = new ExampleApplication();
             string result = exampleApplication.SetText(text);
 
-            exampleApplication.SetOption(Options);
+            exampleApplication.Option = Options;
             exampleApplication.ExampleEditor = customEditor;
 
             // Assigns the value to the Output property

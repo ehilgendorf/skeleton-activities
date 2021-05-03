@@ -5,9 +5,6 @@
         string ExampleEditor { get; set; }
 
         string SetText(string text);
-
-        void SetOption(ExamplePropertyOptions options);
-
-        ExamplePropertyOptions GetOption();
+        ExamplePropertyOptions Option { get; set; }
     }
 }
