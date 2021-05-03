@@ -1,4 +1,4 @@
-﻿namespace AM.Activities.Example.Application
+﻿namespace AM.Activities.Example
 {
     public class ExampleApplication : IExampleApplication
     {

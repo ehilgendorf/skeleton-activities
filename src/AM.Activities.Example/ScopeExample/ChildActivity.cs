@@ -1,7 +1,6 @@
 using System.Activities;
 using AM.Activities.Common;
 using AM.Activities.Common.BaseActivities;
-using AM.Activities.Example.Application;
 
 namespace AM.Activities.Example.ScopeExample
 {

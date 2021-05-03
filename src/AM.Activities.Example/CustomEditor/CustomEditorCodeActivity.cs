@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using AM.Activities.Common.BaseActivities;
 using AM.Activities.Common.Design.Editors;
-using AM.Activities.Example.Application;
 
 namespace AM.Activities.Example.CustomEditor
 {

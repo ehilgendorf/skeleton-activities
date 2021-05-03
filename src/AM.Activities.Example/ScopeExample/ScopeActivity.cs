@@ -3,7 +3,6 @@ using System.Activities.Statements;
 using System.Threading;
 using System.Threading.Tasks;
 using AM.Activities.Common.BaseActivities;
-using AM.Activities.Example.Application;
 
 namespace AM.Activities.Example.ScopeExample
 {
