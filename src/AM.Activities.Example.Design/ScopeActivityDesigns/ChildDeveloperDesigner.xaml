@@ -1,0 +1,60 @@
+<sap:ActivityDesigner
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib"
+    xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    x:Class="AM.Activities.Example.Design.ScopeActivityDesigns.ChildDeveloperDesigner"
+    xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"
+    xmlns:am="http://schemas.anothermonday.com/activities" Icon="{DynamicResource ActivityIcon}">
+    <FrameworkElement.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary
+                    Source="pack://application:,,/AM.Activities.Common.Design;component/StylingDictionaries/DeveloperActivityStyling.xaml" />
+                <ResourceDictionary>
+                    <am:PropertyDescriptionConverter x:Key="PropertyDescriptionConverter" />
+                    <am:PropertyDisplayNameConverter x:Key="PropertyDisplayNameConverter" />
+                    <ArgumentToExpressionConverter x:Key="ArgumentToExpressionConverter"
+                                                   xmlns="clr-namespace:System.Activities.Presentation.Converters;assembly=System.Activities.Presentation" />
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+            <DataTemplate x:Key="Collapsed">
+                <am:CodeActivityWrapper>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Text="{Binding ConverterParameter=Option, Converter={StaticResource PropertyDisplayNameConverter}}"
+                                   ToolTip="{Binding ConverterParameter=Option, Converter={StaticResource PropertyDescriptionConverter}}" />
+                        <sapv:ExpressionTextBox Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HintText="{Binding ModelItem.Properties[Option].PropertyType.GenericTypeArguments[0]}"
+                                                Expression="{Binding Path=ModelItem.Option, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=Out }"
+                                                UseLocationExpression="true" OwnerActivity="{Binding Path=ModelItem}" ExpressionType="{Binding ModelItem.Properties[Option].PropertyType.GenericTypeArguments[0]}"/>
+                    </Grid>
+                </am:CodeActivityWrapper>
+            </DataTemplate>
+            <DataTemplate x:Key="Expanded">
+                <am:CodeActivityWrapper>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Text="{Binding ConverterParameter=Option, Converter={StaticResource PropertyDisplayNameConverter}}"
+                                   ToolTip="{Binding ConverterParameter=Option, Converter={StaticResource PropertyDescriptionConverter}}" />
+                        <sapv:ExpressionTextBox Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HintText="{Binding ModelItem.Properties[Option].PropertyType.GenericTypeArguments[0]}"
+                                                Expression="{Binding Path=ModelItem.Option, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=Out }"
+                                                UseLocationExpression="true" OwnerActivity="{Binding Path=ModelItem}" ExpressionType="{Binding ModelItem.Properties[Option].PropertyType.GenericTypeArguments[0]}"/>
+                    </Grid>
+                </am:CodeActivityWrapper>
+            </DataTemplate>
+        </ResourceDictionary>
+    </FrameworkElement.Resources>
+    <ContentPresenter Style="{DynamicResource ExpandOrCollapsedStyle}" Content="{Binding}" />
+</sap:ActivityDesigner>

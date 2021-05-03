@@ -1,0 +1,40 @@
+<sap:ActivityDesigner
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib"
+    xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    x:Class="AM.Activities.Example.Design.CustomEditor.CustomEditorCodeDeveloperDesigner"
+    xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"
+    xmlns:am="http://schemas.anothermonday.com/activities" Icon="{DynamicResource ActivityIcon}">
+    <FrameworkElement.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary
+                    Source="pack://application:,,/AM.Activities.Common.Design;component/StylingDictionaries/DeveloperActivityStyling.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <DataTemplate x:Key="Collapsed">
+                <am:CodeActivityWrapper>
+                    <Grid>
+                        <Grid.RowDefinitions />
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </am:CodeActivityWrapper>
+            </DataTemplate>
+            <DataTemplate x:Key="Expanded">
+                <am:CodeActivityWrapper>
+                    <Grid>
+                        <Grid.RowDefinitions />
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </am:CodeActivityWrapper>
+            </DataTemplate>
+        </ResourceDictionary>
+    </FrameworkElement.Resources>
+    <ContentPresenter Style="{DynamicResource ExpandOrCollapsedStyle}" Content="{Binding}" />
+</sap:ActivityDesigner>
