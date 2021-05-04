@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using AM.Activities.Common.BaseActivities;
 using AM.Activities.Common.Design.Editors;
-using AM.Activities.Example.Application;
 using AM.ComposerActivitiesBridge.Attributes;
 
 namespace AM.Activities.Example
@@ -53,7 +52,7 @@ namespace AM.Activities.Example
             IExampleApplication exampleApplication = new ExampleApplication();
             string result = exampleApplication.SetText(text);
 
-            exampleApplication.SetOption(Options);
+            exampleApplication.Option = Options;
             exampleApplication.ExampleEditor = customEditor;
 
             // Assigns the value to the Output property

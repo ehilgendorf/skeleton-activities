@@ -1,7 +1,6 @@
 using System.Activities;
 using AM.Activities.Common;
 using AM.Activities.Common.BaseActivities;
-using AM.Activities.Example.Application;
 
 namespace AM.Activities.Example.ScopeExample
 {
@@ -36,8 +35,7 @@ namespace AM.Activities.Example.ScopeExample
 
             if (exampleApplication != null)
             {
-                ExamplePropertyOptions option = exampleApplication.GetOption();
-                Option.Set(context, option.ToString());
+                Option.Set(context, exampleApplication.Option.ToString());
             }
         }
     }

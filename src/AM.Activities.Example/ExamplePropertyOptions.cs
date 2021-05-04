@@ -1,4 +1,4 @@
-namespace AM.Activities.Example.Application
+namespace AM.Activities.Example
 {
     /// <summary>
     ///     Enums declared as a public property in an Activity will be represented as a dropdown list in the property panel
