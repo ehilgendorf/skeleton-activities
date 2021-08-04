@@ -37,6 +37,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AM.Activities.Common.Design, Version=2.0.179.17709, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AM.Activities.Common.Design.2.0.179\lib\net462\AM.Activities.Common.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="AM.Activities.Interfaces, Version=2.0.92.12133, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AM.Activities.Interfaces.2.0.92\lib\net462\AM.Activities.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="AM.Artefacts, Version=2.0.92.12133, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AM.ComposerActivitiesBridge.2.0.92\lib\net462\AM.Artefacts.dll</HintPath>
+    </Reference>
+    <Reference Include="AM.ComposerActivitiesBridge, Version=2.0.92.12133, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AM.ComposerActivitiesBridge.2.0.92\lib\net462\AM.ComposerActivitiesBridge.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationFramework" />
     <Reference Include="PresentationCore" />
     <Reference Include="System.Activities" />
@@ -139,18 +151,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="AM.Activities.Common.Design, Version=2.0.158.50185, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.Activities.Common.Design.2.0.158\lib\net462\AM.Activities.Common.Design.dll</HintPath>
-    </Reference>
-    <Reference Include="AM.Activities.Interfaces, Version=2.0.79.28091, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.Activities.Interfaces.2.0.79\lib\net462\AM.Activities.Interfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="AM.Artefacts, Version=2.0.79.28091, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.ComposerActivitiesBridge.2.0.79\lib\net462\AM.Artefacts.dll</HintPath>
-    </Reference>
-    <Reference Include="AM.ComposerActivitiesBridge, Version=2.0.79.28091, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.ComposerActivitiesBridge.2.0.79\lib\net462\AM.ComposerActivitiesBridge.dll</HintPath>
-    </Reference>
     <Reference Include="AM.Core.Db.DataAccess, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\AM.Core.Db.DataAccess.1.2.25\lib\net462\AM.Core.Db.DataAccess.dll</HintPath>
     </Reference>
@@ -233,11 +233,11 @@
     <Error Condition="!Exists('..\..\packages\AM.Native.WindowsApi.2.0.23\build\AM.Native.WindowsApi.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\AM.Native.WindowsApi.2.0.23\build\AM.Native.WindowsApi.targets'))" />
     <Error Condition="!Exists('..\..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
     <Error Condition="!Exists('..\..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
-    <Error Condition="!Exists('..\..\packages\AM.Activities.Common.Design.2.0.158\Build\AM.Activities.Common.Design.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\AM.Activities.Common.Design.2.0.158\Build\AM.Activities.Common.Design.targets'))" />
+    <Error Condition="!Exists('..\..\packages\AM.Activities.Common.Design.2.0.179\build\AM.Activities.Common.Design.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\AM.Activities.Common.Design.2.0.179\build\AM.Activities.Common.Design.targets'))" />
   </Target>
   <Import Project="..\..\packages\AM.Native.WindowsApi.2.0.23\build\AM.Native.WindowsApi.targets" Condition="Exists('..\..\packages\AM.Native.WindowsApi.2.0.23\build\AM.Native.WindowsApi.targets')" />
   <Import Project="..\..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
-  <Import Project="..\..\packages\AM.Activities.Common.Design.2.0.158\Build\AM.Activities.Common.Design.targets" Condition="Exists('..\..\packages\AM.Activities.Common.Design.2.0.158\Build\AM.Activities.Common.Design.targets')" />
+  <Import Project="..\..\packages\AM.Activities.Common.Design.2.0.179\build\AM.Activities.Common.Design.targets" Condition="Exists('..\..\packages\AM.Activities.Common.Design.2.0.179\build\AM.Activities.Common.Design.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
